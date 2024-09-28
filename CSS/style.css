@@ -1,0 +1,600 @@
+@font-face {
+    font-family: Viga;
+    src: url(../FONTS/Viga/Viga-Regular.ttf);
+}
+
+
+
+html, body{
+    scroll-behavior: smooth;
+    
+    --main-green: #576C54;
+    --secondary-green: #485945;
+    --footer-green: #3C493A;
+    --light-green: #CFFFB8;
+    --text-white: #F6F6F6;
+
+    background-color: var(--footer-green);
+
+    margin: 0;
+}
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--main-green);
+    position: relative;
+    top: -20px;
+    z-index: 0;
+}
+
+header>nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--text-white);
+    width: 75%;
+    max-width: 600px;
+    height: 10%;
+    margin: 20px auto 0 auto;
+    position: relative;
+    top: 15px;
+    border-radius: 42px;
+    border: 5px solid #343434;
+    box-shadow: 0px 6px 5px rgb(37, 37, 37);
+}
+
+header>nav>a{
+    width: 13%;
+    height: auto;
+    position: relative;
+}
+
+header>nav>a>img{
+    transition: 0.5s;
+}
+
+header>nav>a>p{
+    position: absolute;
+    transform: translate(-16%,-260%);
+    text-decoration: none;
+    font-size: clamp(1px, 2.3vw, 25px);
+    background-color: var(--text-white);
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+    border: 2px solid #343434;
+    box-shadow: 0px 6px 5px rgb(37, 37, 37);
+    transition: 0.5s;
+    display: block;
+    z-index: -1;
+    color: #343434;
+}
+
+
+header>nav>a>.nom-icone-competences{
+    transform: translate(-30%,-260%);
+}
+
+header>nav>a>.nom-icone-skills{
+    transform: translate(-7%,-260%);
+}
+
+header>nav>a>.nom-icone-projets{
+    transform: translate(-20%,-260%);
+}
+
+header>nav>a>.nom-icone-contact{
+    transform: translate(-20%,-260%);
+    padding: 0px 10px 0px 10px;
+}
+
+
+
+header>nav>a:hover>img{
+    filter: drop-shadow(0 0 15px var(--main-green));
+}
+
+header>nav>a:hover>p{
+    transform: translate(-16%,-20%);
+}
+
+header>nav>a:hover>.nom-icone-competences{
+    transform: translate(-30%,-20%);
+}
+
+header>nav>a:hover>.nom-icone-skills{
+    transform: translate(-7%,-20%);
+}
+
+header>nav>a:hover>.nom-icone-projets{
+    transform: translate(-20%,-20%);
+}
+
+header>nav>a:hover>.nom-icone-contact{
+    transform: translate(-20%,-20%);
+}
+
+header>nav>a>img{
+    width: 100%;
+}
+
+header>#Presentation{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-bottom: 150px;
+}
+
+
+header>#Presentation>.presentation-photo{
+    width: 40%;
+    height: 40%;
+    max-width: 500px;
+    border: 4px solid var(--text-white);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex: 60%;
+    position: relative;
+}
+
+header>#Presentation>.presentation-photo>img{
+    width: 100%;
+    height: auto;
+}
+
+
+header>#Presentation>.presentation-profil{
+    flex: 40%;
+    margin-right: 10%;
+    margin-left: 30px;
+    height: auto;
+}
+
+header>#Presentation>.presentation-profil>.nom{
+    font-size: clamp(1px, 5vw, 60px);
+    margin: 0;
+    font-family: Viga;
+    color: var(--text-white);
+    line-height: 100%;
+    padding-left: 5px;
+    border-left: 6px solid var(--light-green);
+}
+
+header>#Presentation>.presentation-profil>.profession{
+    font-size: clamp(1px, 5vw, 60px);
+    margin: 0;
+    font-family: Viga;
+    color: var(--light-green);
+    line-height: 100%;
+    padding-left: 5px;
+    border-left: 6px solid var(--text-white);
+}
+
+header>#Presentation>.presentation-profil>.presentation-description{
+    font-size: clamp(10px, 1.8vw, 60px);
+    margin: 0;
+    font-family: Viga;
+    margin-top: 5%;
+    padding-left: 10px;
+    
+    color: var(--text-white);
+    border-left: 6px solid var(--light-green);
+}
+
+header>#Presentation>.presentation-profil>.CV{
+    margin-top: 5%;
+    border: 4px solid var(--text-white);
+    background-color: var(--secondary-green);
+    align-items: center;
+    font-size: clamp(1px, 3vw, 35px);
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: bold;
+    font-family: Viga;
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    max-width: 180px;
+    height: 10%;
+}
+
+header>#Presentation>.presentation-profil>.CV>img{
+    width: 15%;
+    position: relative;
+    transition: 0.5s;
+}
+
+header>#Presentation>.presentation-profil>.CV:hover>img{
+    transform: translateX(7px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#Profil>p{
+    font-size: clamp(1px, 6vw, 50px);
+    font-family: Viga;
+    color: var(--text-white);
+    border-left: 5px solid var(--light-green);
+    width: 50%;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    padding: 0 0 0 15px;
+    margin-bottom: 6%;
+}
+
+
+#Profil>div{
+    display: flex;
+    width: 70%;
+    margin: 20px auto 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#Profil>div>p{
+    font-size: clamp(1px, 2vw, 30px);
+    font-family: Viga;
+    color: var(--text-white);
+}
+
+#Profil>div>img{
+    width: 75%;
+    height: 75%;
+    max-width: 150px;
+    margin: 0 5% 0 5%;
+}
+
+
+#Profil>#Competences{
+    display: flex;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 12%;
+
+}
+
+#Profil>#Competences>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 2% 15% 2%;
+}
+
+#Profil>#Competences>div>img{
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+}
+
+#Profil>#Competences>div>.competence-title{
+    font-size: clamp(1px, 4vw, 40px);
+    font-family: Viga;
+    color: var(--text-white);
+    border-bottom: 5px solid var(--light-green);
+}
+
+#Profil>#Competences>div>.competence-description{
+    font-size: clamp(1px, 2.5vw, 25px);
+    font-family: Viga;
+    color: var(--text-white);
+    position: relative;
+    top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#Skills{
+    width: 100%;
+    background-color: var(--main-green);
+    position: relative;
+    top: -90px;
+    align-items: center;
+}
+
+#Skills>p{
+    font-size: clamp(1px, 6vw, 60px);
+    font-family: Viga;
+    color: var(--text-white);
+    border-bottom: 5px solid var(--light-green);
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin: 0 auto 6% auto;
+    width: 15%;
+    max-width: 150px;
+}
+
+#Skills>div{
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skills>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+#Skills>div>div>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--text-white);
+    border: 4px solid #343434;
+    box-shadow: 0px 6px 5px rgb(37, 37, 37);
+    border-radius: 20px;
+    position: relative;
+    width: 80%;
+    margin: 10px;
+}
+
+#Skills>div>div>div>img{
+    width:15%;
+    padding: 5% 0 5% 5%;
+    height: auto;
+}
+
+#Skills>div>div>div>p{
+    font-size: clamp(1px, 3vw, 50px);
+    font-family: Viga;
+    color: #5E5E5E;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#Projets{
+    background-color: var(--secondary-green);
+    position: relative;
+    top: -150px;
+    width: 100%;
+}
+
+#Projets>p{
+    font-size: clamp(1px, 6vw, 50px);
+    font-family: Viga;
+    color: var(--text-white);
+    border-left: 5px solid var(--light-green);
+    width: 50%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 0 0 0 15px;
+    margin-bottom: 6%;
+}
+
+#Projets>div{
+    display: flex;
+}
+
+
+#Projets>div>.projet-gauche{
+    width: 30%;
+    height: 100%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    position: relative;
+    top: 15px;
+}
+
+#Projets>div>.projet-droite{
+    width: 60%;
+    margin: 5%;
+    position: relative;
+    top: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+
+#Projets>div>.projet-gauche>button{
+    text-align: left;
+    font-size: clamp(1px, 3vw, 40px);
+    font-family: Viga;
+    color: var(--text-white);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-left: 5px solid var(--text-white);
+    cursor: pointer;
+    padding: 3% 0 3% 5%;
+}
+
+
+#Projets>div>.projet-gauche>button:first-child{
+    border-left: 5px solid var(--light-green);
+    background-color: var(--main-green);
+    box-shadow: 0px 6px 5px rgb(37, 37, 37);
+;
+}
+
+
+#Projets>div>.projet-droite>p:first-child{
+    font-size: clamp(1px, 4vw, 50px);
+    font-family: Viga;
+    color: var(--text-white);
+    position: relative;
+    top: 15px;
+}
+
+
+#Projets>div>.projet-droite>p:last-child{
+    font-size: clamp(1px, 1.9vw, 30px);
+    font-family: Viga;
+    color: var(--text-white);
+    position: relative;
+    margin-top: 5%;
+}
+
+#Projets>div>.projet-droite>div{
+    width: 80%;
+    height: 70%;
+    max-width: 700px;
+}
+
+#Projets>div>.projet-droite>div>img:first-child{
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--text-white);
+}
+
+#Projets>div>.projet-droite>div>button{
+    width: 15%;
+    height: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -110%;
+    left: 90%;
+}
+
+#Projets>div>.projet-droite>div>button>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+#Contact{
+    background-color: var(--footer-green);
+    position: relative;
+    top: -150px;
+    width: 100%;
+}
+
+#Contact>p:first-child{
+    font-size: clamp(1px, 6vw, 60px);
+    font-family: Viga;
+    color: var(--text-white);
+    border-bottom: 5px solid var(--light-green);
+    position: relative;
+    top: 30px;
+    margin: 0 auto 0 auto;
+    width: 21%;
+    max-width: 210px;
+}
+
+#Contact>div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    height: auto;
+    margin: 10% auto 0 auto;
+}
+
+#Contact>div>button{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: none;
+    border: none;
+    width: 13%;
+    height: auto;
+    max-width: 120px;
+    margin: 0 5% 0 5%;
+    cursor: pointer;
+}
+
+#Contact>div>button>img{
+    width: 100%;
+    transition: 0.3s;
+}
+
+#Contact>div>button>p{
+    font-size: clamp(1px, 4vw, 60px);
+    font-family: Viga;
+    color: var(--text-white);
+    position: relative;
+    bottom: 15%;
+}
+
+
+#Contact>div>button:hover>img{
+    filter: drop-shadow(0 0 15px var(--light-green));
+}
+
+
+
+#Contact>p:last-child{
+    font-size: clamp(1px, 1.3vw, 60px);
+    font-family: Viga;
+    color: var(--text-white);
+    position: relative;
+    top: 145px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+#Contact>p:last-child>a{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+    #Projets>div>.projet-droite{
+        top: -50px;
+    }
+}
