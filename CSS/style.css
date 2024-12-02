@@ -216,6 +216,50 @@ header>#Presentation>.presentation-profil>.CV:hover>img{
 
 
 
+.up{
+    width: 7%;
+    max-width: 80px;
+    z-index: 1;
+    text-decoration: none;
+    position: sticky;
+    top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    left: 93%;
+    font-size: clamp(1px, 1vw, 50px);
+}
+
+
+.up-image{
+    width: 100%;
+    max-width: 80px;
+    transform: rotate(270deg);
+    z-index: 1;
+    transition: 0.3s;
+}
+
+
+.retour-texte{
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    z-index: 0;
+    transition: 0.3s;
+    opacity: 0%;
+}
+
+
+.up-image:hover{
+    transform: rotate(630deg);
+}
+
+.up-image:hover~.retour-texte{
+    opacity: 100%;
+    right: 130%;
+}
+
+
 
 
 
@@ -315,6 +359,7 @@ header>#Presentation>.presentation-profil>.CV:hover>img{
     position: relative;
     top: -90px;
     align-items: center;
+    z-index: 0;
 }
 
 #Skills>p{
