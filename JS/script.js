@@ -62,6 +62,20 @@ const buttons = {
         title: "Space Clicker",
         description: "Jeu clicker permettant de propulser une fusée toujours plus haut dans l'espace.",
         pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S3/Mini-Projet?ref_type=heads"
+    },
+    Classification: {
+        element: document.getElementById("Classification"),
+        bgImage: "IMG/Classification.png",
+        title: "Classification",
+        description: "Le projet de classification consiste à classifier des données contenues dans un fichier CSV en fonction de critère de tri (dans l'exemple, il s'agit d'Iris triables par taille de pétale et bien plus). Ce projet fût entièrement développé en java et javaFX et les données sont ainsi représentées dans un nuage de points. L'algorithme de classification utilisé est l'algorithme K-NN permettant ainsi de classifier automatiquement les données en fonction des autres.\nCe projet m'a permis de développer les compétences suivantes:\n\n- Autonomie: L'autonomie a été au cœur même de ce projet, me permettant de m'améliorer sur ce point en cherchant par moi-même les réponses à mes questions.\n\n-Développement javaFX: J'ai ainsi appris à m'améliorer dans le développement en javaFX me permettant ainsi de faire des interface assez facilement.\n\n-Résolution de problème: Dû à un grand nombre de problèmes rencontrés durant ce projet, la résolution de problème est l'une des compétences la plus travaillée.\n\n-Travail en équipe: Travailler en équipe était évidemment l'objectif principal de ce projet et cela à permis d'améliorer certains points tels que le travail en méthodes agiles ou l'utilisation de git, par exemple.\n\nLes principaux problèmes rencontrés concernent le nuage de point, car les outils fournis par javaFX ne nous permettait pas vraiment de réaliser le projet comme prévu car trop limité.",
+        pageWeb: ""
+    },
+    LilloChat: {
+        element: document.getElementById("LilloChat"),
+        bgImage: "IMG/LilloChat.png",
+        title: "LilloChat",
+        description: "LilloChat est un réseau social élaboré en JEE (ici, développer avec Tomcat) permettant de communiquer entre amis au même titre que le célèbre réseau social Discord. Nous avons la possibilité d'envoyer des messages / images, créer des channels, en rejoindre et même modifier nos informations personnelles (y compris la photo de profil). Ce projet est néanmoins développé sans javascript, spécificité de ce dernier.\n\nCe projet m'a permis de développer les compétences suivantes:\n\n- Autonomie: Tout au long de ce projet, nous avons eu besoin de faire preuve d'une grande autonomie pour résoudre les nombreux conflits.\n\n-Développement JEE: J'ai ainsi appris à m'améliorer dans le développement JEE notamment coté base de données mais également niveau Servlet.\n\n-Travail en équipe: Travailler en équipe était évidemment l'objectif principal de ce projet et cela à permis d'améliorer certains points tels que le travail en méthodes agiles ou l'utilisation de git, par exemple.\n\n-Design: Étant pas très doué en design, ce projet m'a permis de grandement m'améliorer sur ce point en faisant travailler ma réflexion ainsi que ma créativité.\n\nLe principal problème rencontré durant de projet est la fonctionnalité d'envoie de photos. En effet, dans le cadre de ce projet, nous avons dû sauvegarder directement les images dans la bases de données, ce qui n'est pas simple en JEE.",
+        pageWeb: ""
     }
 };
 
