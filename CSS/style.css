@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #030712;
+    --bg-color: #030712; /* Fond très sombre */
     --surface-color: #111827;
     --primary-color: #818cf8;
     --secondary-accent: #2dd4bf;
@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Particules */
 #particles-js {
     position: fixed;
     width: 100%;
@@ -33,6 +34,7 @@ body {
     z-index: -1;
 }
 
+/* Navbar */
 header {
     position: fixed;
     top: 0;
@@ -103,6 +105,7 @@ nav {
     color: var(--bg-color);
 }
 
+/* Sections globales */
 section {
     padding: 120px 30px;
     max-width: 1200px;
@@ -134,6 +137,7 @@ section {
     border-radius: 2px;
 }
 
+/* Animations au Scroll */
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -163,6 +167,7 @@ section {
     transform: translateY(0);
 }
 
+/* Hero Section */
 #hero {
     display: flex;
     align-items: center;
@@ -279,6 +284,7 @@ section {
     position: relative;
 }
 
+/* TAILLE DE LA PHOTO PRO */
 .hero-image img {
     width: 330px;
     height: 330px;
@@ -300,6 +306,7 @@ section {
     animation: rotate 20s linear infinite;
 }
 
+/* A Propos */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -347,6 +354,7 @@ section {
     font-weight: 400;
 }
 
+/* Compétences (Badges) */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -398,6 +406,7 @@ section {
     transition: all 0.7s ease;
 }
 
+/* Bloc Entreprise (Nextoo) */
 .company-section {
     background: rgba(17, 24, 39, 0.4);
     border: 1px solid rgba(255,255,255,0.05);
@@ -440,6 +449,7 @@ section {
     line-height: 1.7;
 }
 
+/* Grille de projets */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -467,6 +477,7 @@ section {
     transform: translateZ(20px);
 }
 
+/* TAILLE DES IMAGES DANS LES CARTES */
 .project-image img {
     width: 100%;
     height: 200px;
@@ -559,7 +570,7 @@ section {
 .modal-body-scroll::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 4px; }
 .modal-body-scroll::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 4px; }
 
-/* Image en haut de la modale */
+/* Image EN HAUT de la modale */
 #modalImage {
     width: 100%;
     max-height: 350px;
@@ -567,6 +578,7 @@ section {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: none; /* Caché par défaut, affiché par JS */
 }
 
 #modalTitle {
@@ -611,7 +623,7 @@ section {
     padding: 8px 15px;
 }
 
-/* Contact & Footer */
+/* Contact & Social Links */
 .social-links {
     display: flex;
     justify-content: center;
@@ -641,6 +653,7 @@ section {
     box-shadow: 0 10px 25px rgba(45, 212, 191, 0.5);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 40px;
@@ -651,6 +664,7 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.03);
 }
 
+/* Bouton Retour Haut */
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -680,7 +694,7 @@ footer {
     color: var(--bg-color);
 }
 
-/* Animations */
+/* Keyframes Animations */
 @keyframes blink { 50% { opacity: 0; } }
 
 @keyframes float {
@@ -704,7 +718,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links { display: none; } /* Menu simple sur mobile */
     #hero { flex-direction: column-reverse; text-align: center; padding-top: 100px; gap: 30px;}
     .hero-content h1 { font-size: 2rem; }
     .hero-buttons { justify-content: center; flex-wrap: wrap;}

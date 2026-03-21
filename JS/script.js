@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitle = document.getElementById("modalTitle");
     const modalDesc = document.getElementById("modalDesc");
     const modalTech = document.getElementById("modalTech");
-    const modalImage = document.getElementById("modalImage"); // NOUVEAU
+    const modalImage = document.getElementById("modalImage"); // Balise img de la popup
     const projectCards = document.querySelectorAll(".project-card");
 
     projectCards.forEach(card => {
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 modalTech.style.display = "none";
             }
 
-            // 3. NOUVEAU : Récupération et affichage de l'image du projet
+            // 3. Récupération et affichage de l'image du projet
             const cardImg = card.querySelector(".project-image img");
             if(cardImg && cardImg.src) {
                 modalImage.src = cardImg.src;
