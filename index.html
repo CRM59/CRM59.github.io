@@ -3,221 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Léo Fantuz Chrobot | Creative Developer</title>
     <link rel="stylesheet" href="CSS/style.css">
-
-    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header id="header">
-        <nav>
-            <a href="#Profil"><img src="IMG/icones/profil.png" alt="Profil" title="Profil"><p class="nom-icone-profil">Profil</p></a>
-            <a href="#Competences"><img src="IMG/icones/compétences.png" alt="Compétences" title="Compétences"><p class="nom-icone-competences">Compétences</p></a>
-            <a href="#Skills"><img src="IMG/icones/skills.png" alt="Skills" title="Skills"><p class="nom-icone-skills">Skills</p></a>
-            <a href="#Projets"><img src="IMG/icones/projets.png" alt="Projets" title="Projets"><p class="nom-icone-projets">Projets</p></a>
-            <a href="#Contact"><img src="IMG/icones/email.png" alt="Contact" title="Contact"><p class="nom-icone-contact">Contact</p></a>
-        </nav>
+<body id="top">
 
-        <section id="Presentation">
-            <div class="presentation-photo"><img src="IMG/photo.jpg" alt="Photo"></div>
-            <div class="presentation-profil">
-                <p class="nom">Fantuz Chrobot Léo</p>
-                <p class="profession">Développeur informatique</p>
-    
-                <p align="justify" class="presentation-description">Cela fait maintenant plusieurs années que je me suis trouvé une passion pour le développement informatique. Actuellement étudiant en deuxième année de BUT Informatique à l’IUT de Villeneuve d’Ascq, je cherche actuellement un stage dans ce domaine.</p>
-                <a class="CV" href="https://drive.google.com/file/d/11nQu1OTRUpP3B32ub6Y8GOJfDpg6P4Jb/view?usp=sharing">Mon CV <img src="IMG/icones/fleches.png" alt=""></a>
-                
-            </div>
-        </section>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Léo FC<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#profil" data-i18n="nav_profil">// Profil</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">// Compétences</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">// Expérience</a></li>
+                <li><a href="#perso" data-i18n="nav_perso">// Personnel</a></li>
+                <li><a href="#projets" data-i18n="nav_projets">// Scolaire</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">// Contact</a></li>
+                <li><button id="langToggle" class="lang-btn">EN</button></li>
+            </ul>
+        </nav>
     </header>
 
-    <a href="#header" class="up">
-        <img src="IMG/icones/up.png" alt="" class="up-image">
-        <p class="retour-texte">Retourner en haut de la page</p>
-    </a>
-    
-
-    <section id="Profil">
-        <p>Mon profil</p>
-
-        <div class="histoire-icon">
-            <p align="right">J’éprouve un grand intérêt pour le développement informatique depuis maintenant quelques années. Ayant une certaine préférence pour le front-end, mon apprentissage en autodidacte se base notamment sur des langages tels que le HTML ou le CSS.</p>
-            <img src="IMG/icones/histoire.png" alt="Histoire">
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="ml11">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters" data-i18n="hero_title">Bonjour, je suis Léo.</span>
+              </span>
+            </h1>
+            <h2><span data-i18n="hero_subtitle">Développeur Full-Stack</span> <span class="typed-cursor">|</span></h2>
+            <p class="hero-p" data-i18n="hero_desc">Étudiant en 3ème année de BUT Informatique à Villeneuve d'Ascq. Créateur d'expériences numériques, actuellement développeur Full-Stack en alternance chez Nextoo.</p>
+            <div class="hero-buttons">
+                <a href="#experience" class="btn btn-primary btn-magnetic" data-i18n="hero_btn_projects">Découvrir mon parcours</a>
+<a href="CV Léo Fantuz Chrobot.png" download="CV_Leo_Fantuz_Chrobot.png" class="btn btn-secondary btn-magnetic"><i class="fa-solid fa-download"></i> <span data-i18n="hero_btn_cv">Mon CV</span></a>            </div>
         </div>
-        <div class="langages-icon">
-            <img src="IMG/icones/langages.png" alt="Langages">
-            <p align="left">Je possède néanmoins des compétences en back-end, me permettant de développer en full-stack. J'essaie de m'améliorer chaque jour en élargissant mes compétences full-stack.</p>
+        <div class="hero-image">
+            <img src="IMG/photo.jpg" alt="Photo de Léo">
         </div>
-        <div class="competences-icon">
-            <p align="right">Je suis actuellement en deuxième année de BUT informatique à l'Université de Lille, Villeneuve-d'Ascq. J’étudie la conception d’applications web et mobile ainsi que la gestion de projet en équipe.</p>
-            <img src="IMG/icones/compétences.png" alt="Compétences">
-        </div>
-        <div class="recherche-icon">
-            <img src="IMG/icones/recherche.png" alt="Recherche">
-            <p align="left">Je suis actuellement à la recherche d’un stage de fin d’année pouvant potentiellement mener à une alternance en troisième année. Je suis motivé, appliqué et toujours prêt à découvrir de nouvelles choses en conditions sérieuses.</p>
-        </div>
+    </section>
 
-
-        <div id="Competences">
-            <div>
-                <img src="IMG/icones/patient.png" alt="Patience">
-                <p class="competence-title">Patient</p>
-                <p align="center" class="competence-description">Lorsque qu’un problème survient, je sais faire preuve de calme et de patience afin de le résoudre.</p>
+    <section id="profil" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_about">À propos</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-i18n="about_text">Passionné par le code créatif, j'aime transformer des idées complexes en interfaces fluides et intuitives. Curieux de nature, j'explore constamment de nouvelles technologies pour enrichir mon panel de compétences Full-Stack.</p>
             </div>
-            <div>
-                <img src="IMG/icones/curieux.png" alt="Curiosité">
-                <p class="competence-title">Curieux</p>
-                <p align="center" class="competence-description">Ma volonté de toujours en apprendre davantage me permet d’élargir mes connaissances.</p>
-            </div>
-            <div>
-                <img src="IMG/icones/passionné.png" alt="Passion">
-                <p class="competence-title">Passionné</p>
-                <p align="center" class="competence-description">Pour être motivé, il faut avant tous être passionné. Ainsi, cela me permet de prendre du plaisir à travailler.</p>
-            </div>
-            <div>
-                <img src="IMG/icones/autonome.png" alt="Autonomie">
-                <p class="competence-title">Autonome</p>
-                <p align="center" class="competence-description">Je suis capable d’observer et de me documenter afin de mener à bien mon travail.</p>
+            <div class="soft-skills reveal-stagger">
+                <div class="soft-skill-card"><i class="fa-solid fa-brain"></i><h3 data-i18n="skill_curiosity">Curiosité</h3></div>
+                <div class="soft-skill-card"><i class="fa-solid fa-heart"></i><h3 data-i18n="skill_passion">Passion</h3></div>
+                <div class="soft-skill-card"><i class="fa-solid fa-lightbulb"></i><h3 data-i18n="skill_autonomy">Autonomie</h3></div>
+                <div class="soft-skill-card"><i class="fa-solid fa-chess-knight"></i><h3 data-i18n="skill_patience">Patience</h3></div>
             </div>
         </div>
     </section>
 
+    <section id="skills" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_stack">Stack Technique globale</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="skills-container reveal-stagger">
+            <span class="skill-badge" title="Java, Spring Boot, Hibernate / JPA"><i class="fa-brands fa-java"></i> Java / Spring Boot</span>
+            <span class="skill-badge" title="JavaScript, TypeScript, Node.js"><i class="fa-brands fa-node-js"></i> JS / TypeScript / Node.js</span>
+            <span class="skill-badge" title="Python, Kotlin, C, C#, Lua"><i class="fa-brands fa-python"></i> Python / C# / Kotlin</span>
+            
+            <span class="skill-badge" title="Vue.js, Pinia, Vue-Router, Vuetify"><i class="fa-brands fa-vuejs"></i> Vue.js / Pinia / Vuetify</span>
+            <span class="skill-badge" title="React.js, React-Native, Redux, React-Router"><i class="fa-brands fa-react"></i> React / React-Native</span>
+            <span class="skill-badge" title="HTML5, CSS3, Bootstrap"><i class="fa-brands fa-html5"></i> HTML5 / CSS3 / UI</span>
+            
+            <span class="skill-badge" title="PostgreSQL, SQL, CQL, H2, Liquibase"><i class="fa-solid fa-database"></i> PostgreSQL / SQL / Liquibase</span>
+            <span class="skill-badge" title="MongoDB, Cassandra, Redis, CouchDB"><i class="fa-solid fa-server"></i> NoSQL / Redis / Mongo</span>
+            
+            <span class="skill-badge" title="Docker, ArgoCD, GitLab CI/CD, Trivy, SonarQube"><i class="fa-brands fa-docker"></i> Docker / CI-CD / ArgoCD / Trivy </span>
+            <span class="skill-badge" title="Linux (Ubuntu, Debian), Windows, Tomcat, Nginx"><i class="fa-brands fa-linux"></i> Linux / Tomcat / Nginx</span>
+            
+            <span class="skill-badge" title="Git, GitLab, GitHub"><i class="fa-brands fa-git-alt"></i> Git / GitLab / GitHub</span>
+            <span class="skill-badge" title="Jira, Confluence, Méthodologie Agile (Scrum)"><i class="fa-brands fa-jira"></i> Agile Scrum / Jira</span>
+            <span class="skill-badge" title="Swagger, Postman, Bruno, Axios, npm, pnpm"><i class="fa-solid fa-network-wired"></i> Postman / Swagger / API</span>
+            <span class="skill-badge" title="Figma, Miro"><i class="fa-brands fa-figma"></i> Figma / Miro</span>
+            <span class="skill-badge" title="IntelliJ, Visual Studio Code"><i class="fa-solid fa-code"></i> IntelliJ / VS Code</span>
+        </div>
+    </section>
 
-    <section id="Skills">
-        <p>Skills</p>
-
-        <div>
-            <div class="skills-gauche">
-                <div class="java">
-                    <img src="IMG/icones/java.png" alt="java" class="java-image">
-                    <p class="java-nom">Java</p>
-                </div>
-                <div class="HTML">
-                    <img src="IMG/icones/HTML.png" alt="html" class="HTML-image">
-                    <p class="HTML-nom">HTML</p>
-                </div>
-                <div class="CSS">
-                    <img src="IMG/icones/CSS.png" alt="css" class="CSS-image">
-                    <p class="CSS-nom">CSS</p>
-                </div>
-                <div class="SQL">
-                    <img src="IMG/icones/SQL.png" alt="sql" class="SQL-image">
-                    <p class="SQL-nom">SQL</p>
-                </div>
-                <div class="python">
-                    <img src="IMG/icones/python.png" alt="python" class="python-image">
-                    <p class="python-nom">Python</p>
+    <section id="experience" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_experience">Parcours Professionnel</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="company-section">
+            <div class="company-header">
+                <h3 class="company-name">Nextoo</h3>
+                <p class="company-desc" data-i18n="company_nextoo_desc">Entreprise de Services du Numérique (ESN) spécialisée dans l'accompagnement et la transformation digitale sur-mesure.</p>
+                
+                <div class="my-journey">
+                    <h4 data-i18n="title_my_journey">Mon parcours chez eux</h4>
+                    <p data-i18n="company_nextoo_journey">J'ai débuté mon aventure chez Nextoo en mars 2025 à travers un stage intensif au sein de la « Nextoo Academy ». À l'issue de cette période hautement formatrice, j'ai eu l'opportunité de poursuivre l'aventure en alternance dès septembre 2026. J'ai d'abord intégré le projet Portail Nextoo Formateur (PNF), avant de rejoindre en parallèle le projet Gestion Des Stocks (GDS) en novembre 2026. Cette évolution m'a permis d'acquérir une forte autonomie et de consolider mon expertise Full-Stack et DevOps.</p>
                 </div>
             </div>
-    
-            <div class="skills-droite">
-                <div class="vscode">
-                    <img src="IMG/icones/vscode.png" alt="vscode" class="vscode-image">
-                    <p class="vscode-nom">VS Code</p>
+
+            <div class="projects-grid reveal-stagger">
+                <div class="project-card js-tilt" data-tilt data-project="nextoo_academy">
+                    <div class="project-image"><img src="IMG/nextoo_academy.png" alt="Nextoo Academy"></div>
+                    <div class="project-info">
+                        <h3 data-i18n="proj_nextoo_academy_title">Stage - Nextoo Academy</h3>
+                        <p data-i18n="proj_nextoo_academy_desc">Immersion technique et formation interne intensive.</p>
+                    </div>
                 </div>
-                <div class="intelij">
-                    <img src="IMG/icones/intelliJ.png" alt="intelij" class="intelij-image">
-                    <p class="intelij-nom">InteliJ</p>
+                
+                <div class="project-card js-tilt" data-tilt data-project="nextoo_pnf">
+                    <div class="project-image"><img src="IMG/nextoo_pnf.png" alt="Projet PNF"></div>
+                    <div class="project-info">
+                        <h3 data-i18n="proj_nextoo_pnf_title">Alternance - Projet PNF</h3>
+                        <p data-i18n="proj_nextoo_pnf_desc">Développement du "Portail Nextoo Formateur".</p>
+                    </div>
                 </div>
-                <div class="figma">
-                    <img src="IMG/icones/figma.png" alt="figma" class="figma-image">
-                    <p class="figma-nom">Figma</p>
-                </div>
-                <div class="gitlab">
-                    <img src="IMG/icones/gitlab.png" alt="gitlab" class="gitlab-image">
-                    <p class="gitlab-nom">Gitlab</p>
-                </div>
-                <div class="postgresql">
-                    <img src="IMG/icones/postgresql.png" alt="postgresql" class="postgresql-image">
-                    <p class="postgresql-nom">Postgresql</p>
+
+                <div class="project-card js-tilt" data-tilt data-project="nextoo_gds">
+                    <div class="project-image"><img src="IMG/nextoo_gds.png" alt="Projet GDS"></div>
+                    <div class="project-info">
+                        <h3 data-i18n="proj_nextoo_gds_title">Alternance - Projet GDS</h3>
+                        <p data-i18n="proj_nextoo_gds_desc">Développement du projet "Gestion des Stocks".</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section id="Projets">
-        <p>Projets</p>
-
-        <div class="projet-box">
-            <div class="projet-gauche">
-                <button id="Itinéraires" onclick="Itinéraires()">Itinéraires</button>
-                <button id="SpaceOfQuestion" onclick="SpaceOfQuestion()">Space Of Questions</button>
-                <button id="Covoiturage" onclick="Covoiturage()">Covoiturage</button>
-                <button id="Banko" onclick="Banko()">Banko</button>
-                <button id="Activities" onclick="Activities()">Activities</button>
-                <button id="BDD" onclick="BDD()">Exploitation BDD</button>
-                <button id="FindUrWay" onclick="FindUrWay()">Find Ur Way</button>
-                <button id="SpaceClicker" onclick="SpaceClicker()">Space Clicker</button>
-                <button id="Classification" onclick="Classification()">Classification</button>
-                <button id="LilloChat" onclick="LilloChat()">LilloChat</button>
-                <button id="Steveio" onclick="Steveio()">Steve.io</button>
-            </div>
-            <div class="projet-droite">
-                <p id="project-title" align="center">Itinéraires</p>
-                <div>
-                    <img src="IMG/itineraires.png" alt="Illustration activités" id="projectImage">
-                    <button onclick="openGitProject()"><img src="IMG/icones/gitlab.png" alt="gitlab"></button>
+    <section id="perso" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_perso">Projets Personnels</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="projects-grid reveal-stagger">
+            <div class="project-card js-tilt" data-tilt data-project="scarlea">
+                <div class="project-image"><img src="IMG/scarlea.png" alt="Scarlea"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_scarlea_title">Scarlea</h3>
+                    <p data-i18n="proj_scarlea_desc">Application mobile React-Native de suivi du cycle menstruel.</p>
                 </div>
-                <p id="project-description" align="center" class="projet-description">La SAE 2.01/2.02 de développement d’une application et exploration algorithmique a pour objectif d’apprendre à manipuler une librairie donnée afin d’élaborer une application répondant à des critères technique donnés. En effet, ce projet eut pour thème l’élaboration d’une application permettant de calculer les plus courts trajets entre une ville et une autre en fonction de plusieurs modalités de transport tel que le train ou bien même l’avion, et ce, en considérant plusieurs critères tels que le prix, le temps et le taux de CO2 du trajet. Nous avons ainsi utilisé une librairie fournie pour la création d’un graphe, mais nous avons également dû nous occuper de la partie IHM du projet avec la création d’une application visuelle permettant à l’utilisateur d’entrer les informations qu’il souhaite afin de lui renvoyer les trajets souhaités.
-                    <br><br>
-                    Compétences acquises:
-                    <br><br>
-                    Utilisation de Figma: Afin d’avoir un premier aperçu de notre application,
-                    nous avons dû apprendre à utiliser Figma convenablement afin de créer une maquette illustrant les fonctionnalités de l’application.
-                    <br><br>
-                    Utilisation de JavaFX : Afin d’élaborer l’application, nous avons eu besoin de maîtriser convenablement le javaFX afin de développer une application correcte et détaillée.
-                    <br><br>
-                    Java : Nous avons également dû utiliser une grande partie de nos connaissances engendrées durant l’année (Interface, héritage…) afin de créer une application fonctionnelle et optimisée.
-                    <br><br>
-                    Utilisation des librairies mises à disposition : Ainsi, pour réaliser ce projet, nous avons dû apprendre à analyser et àexploiter les librairies fournies.
-                    <br><br>
-                    Savoir être:
-                    <br><br>
-                    Réflexion : Faire preuve de réflexion afin d’implémenter les fonctionnalités souhaitées parfois difficiles.
-                    <br><br>
-                    Autonome : Comme pour tout les projets du BUT 1, l’autonomie fut un point important durant cette SAE. Savoir régler nos problèmes et élaborer l’application de manière totalement autonome est ainsi l’un des atouts travaillés lors de ce projet.
-                    <br><br>
-                    Organisation : savoir organiser son travail pour rendre le travail proprement et dans les temps fut nécessaire lors de ces projets.
-                    <br><br>
-                    Bilan:
-                    <br><br>
-                    Points forts :
-                    <br><br>
-                    Ce projet me permis d’améliorer mes connaissances en java, notamment les méthodes à employer afin d’implémenter les fonctionnalités souhaitées. J’ai également eu l’occasion d’améliorer mon organisation afin de pouvoir réaliser les tâches demandées en temps et en heure.
-                    <br><br>
-                    <br><br>
-                    Mes difficultés et points à améliorer :
-                    <br><br>
-                    Ma difficulté principale lors de ce projet était notamment la réflexion quant à la manière d’implémenter certaines fonctionnalités. En effet, beaucoup des différentes fonctionnalités me prirent énormément de temps à imaginer et à implémenter. De plus, le management du travail en équipe fut difficile à mettre en place pour réaliser le projet.
-                    <br><br>
-                    Conclusion :
-                    <br><br>
-                    L’élaboration de ce projet me prit à cœur. C’est pourquoi mon implication ne fut pas moindre afin d’aider au mieux mon groupe à élaborer ce projet. Si cela était à refaire, j’imagine que j’essayerais de me poser un peu mieux afin de réfléchir à la manière d’implémenter les différentes fonctionnalités demandées. 
-                    <br><br>
-                    De plus, j’essayerais de prendre un peu plus de pause afin d’éviter de me surcharger la tête. Ainsi, cela pourrait être un de mes objectifs pour le BUT 2 car en effet, ce projet me mis pas mal la pression. Pour cela, rien de tel qu’un peu plus de repos et de méditation afin de me détendre, permettant une réflexion et une appréciation du projet plus concret. 
-                    <br><br>
-                    Pour finir, il est bon de ne mentionner que ce projet eu un réel impact sur mon projet professionnel. En effet, il s’agit là de ma première élaboration d’application concrète et cela m’a plus énormément. Il se pourrait que cette SAE me fît réfléchir un peu mieux à mes objectifs professionnels futurs.</p>
             </div>
         </div>
     </section>
 
-
-    <section id="Contact">
-        <p>Contact</p>
-
-        <div>
-            <button onclick="openMail()"><img src="IMG/icones/email.png" alt="Email" title="Email"><p>Mail</p></button>
-            <button onclick="openGitlab()"><img src="IMG/icones/gitlab.png" alt="Gitlab" title="Gitlab"><p>Gitlab</p></button>
-            <button onclick="openLinkedin()"><img src="IMG/icones/linkedin.png" alt="LinkedIn" title="LinkedIn"><p>LinkedIn</p></button>
+    <section id="projets" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_projects">Projets Scolaires</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
         </div>
-
-        <p>Designed by <a href="https://fr.freepik.com/">Freepik</a></p>
+        
+        <div class="projects-grid reveal-stagger">
+            <div class="project-card js-tilt" data-tilt data-project="startup">
+                <div class="project-image"><img src="IMG/startup.png" alt="Startup Week"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_startup_title">Startup Week - TransmissionPro</h3>
+                    <p data-i18n="proj_startup_desc">Application médicale avec transcription vocale (React.js / Spring).</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="lillochat">
+                <div class="project-image"><img src="IMG/LilloChat.png" alt="LilloChat"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_lillochat_title">LilloChat</h3>
+                    <p data-i18n="proj_lillochat_desc">Réseau social JEE sans JavaScript (Apache Tomcat, PostgreSQL).</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="steveio">
+                <div class="project-image"><img src="IMG/Steveio.png" alt="Steve.io"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_steveio_title">Steve.io</h3>
+                    <p data-i18n="proj_steveio_desc">Jeu web SPA en JavaScript natif (Clone d'Agar.io).</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="space_clicker">
+                <div class="project-image"><img src="IMG/SpaceClicker.png" alt="Space Clicker"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_space_clicker_title">Space Clicker</h3>
+                    <p data-i18n="proj_space_clicker_desc">Jeu incrémental en Java exécuté dans la console.</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="itineraires">
+                <div class="project-image"><img src="IMG/itineraires.png" alt="Itinéraires"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_itineraires_title">Itinéraires</h3>
+                    <p data-i18n="proj_itineraires_desc">Calcul d'itinéraires multi-critères (prix, temps, CO2) en JavaFX.</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="space">
+                <div class="project-image"><img src="IMG/Space_Of_Questions.png" alt="Space Of Questions"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_space_title">Space Of Questions</h3>
+                    <p data-i18n="proj_space_desc">Jeu éducatif Java pour primaires avec gestion de données.</p>
+                </div>
+            </div>
+            
+            <div class="project-card js-tilt" data-tilt data-project="carpool">
+                <div class="project-image"><img src="IMG/Covoiturage.png" alt="Covoiturage"></div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_carpool_title">Covoiturage</h3>
+                    <p data-i18n="proj_carpool_desc">Service web complet HTML/CSS pour gestion de flotte en entreprise.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section id="contact" class="reveal">
+        <div class="section-title">
+            <h2><span class="bracket">{</span> <span data-i18n="section_contact">Contact</span> <span class="bracket">}</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="social-links">
+            <a href="mailto:leof150105@gmail.com" class="social-icon magnetic-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://gitlab.com/leo9440022" target="_blank" class="social-icon magnetic-icon" title="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+            <a href="https://www.linkedin.com/in/l%C3%A9o-fantuz-chrobot-9157b229b/" target="_blank" class="social-icon magnetic-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </section>
 
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body-scroll">
+                <img id="modalImage" src="" alt="Aperçu du projet">
+                
+                <h2 id="modalTitle"></h2>
+                <div id="modalDesc"></div>
+                <div class="modal-tech-stack" id="modalTech"></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="btn-magnetic" title="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="JS/script.js"></script>
-
 </body>
 </html>

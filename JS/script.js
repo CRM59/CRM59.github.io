@@ -1,372 +1,353 @@
-const projectImage = document.getElementById("projectImage");
-const projectTitle = document.getElementById("project-title");
-const projectDescription = document.getElementById("project-description");
-
-function start(){
+document.addEventListener("DOMContentLoaded", () => {
     
-}
-
-const buttons = {
-    Itinéraires: {
-        element: document.getElementById("Itinéraires"),
-        bgImage: "IMG/itineraires.png",
-        title: "Itinéraires",
-        description: `La SAE 2.01/2.02 de développement d’une application et exploration algorithmique a pour objectif d’apprendre à manipuler une librairie donnée afin d’élaborer une application répondant à des critères technique donnés. En effet, ce projet eut pour thème l’élaboration d’une application permettant de calculer les plus courts trajets entre une ville et une autre en fonction de plusieurs modalités de transport tel que le train ou bien même l’avion, et ce, en considérant plusieurs critères tels que le prix, le temps et le taux de CO2 du trajet. Nous avons ainsi utilisé une librairie fournie pour la création d’un graphe, mais nous avons également dû nous occuper de la partie IHM du projet avec la création d’une application visuelle permettant à l’utilisateur d’entrer les informations qu’il souhaite afin de lui renvoyer les trajets souhaités.
-
-Compétences acquises:
-
-Utilisation de Figma: Afin d’avoir un premier aperçu de notre application,
-nous avons dû apprendre à utiliser Figma convenablement afin de créer une maquette illustrant les fonctionnalités de l’application.
-
-Utilisation de JavaFX : Afin d’élaborer l’application, nous avons eu besoin de maîtriser convenablement le javaFX afin de développer une application correcte et détaillée.
-
-Java : Nous avons également dû utiliser une grande partie de nos connaissances engendrées durant l’année (Interface, héritage…) afin de créer une application fonctionnelle et optimisée.
-
-Utilisation des librairies mises à disposition : Ainsi, pour réaliser ce projet, nous avons dû apprendre à analyser et àexploiter les librairies fournies.
-
-Savoir être:
-
-Réflexion : Faire preuve de réflexion afin d’implémenter les fonctionnalités souhaitées parfois difficiles.
-
-Autonome : Comme pour tout les projets du BUT 1, l’autonomie fut un point important durant cette SAE. Savoir régler nos problèmes et élaborer l’application de manière totalement autonome est ainsi l’un des atouts travaillés lors de ce projet.
-
-Organisation : savoir organiser son travail pour rendre le travail proprement et dans les temps fut nécessaire lors de ces projets.
-
-Bilan:
-
-Points forts :
-
-Ce projet me permis d’améliorer mes connaissances en java, notamment les méthodes à employer afin d’implémenter les fonctionnalités souhaitées. J’ai également eu l’occasion d’améliorer mon organisation afin de pouvoir réaliser les tâches demandées en temps et en heure.
-
-
-Mes difficultés et points à améliorer :
-
-Ma difficulté principale lors de ce projet était notamment la réflexion quant à la manière d’implémenter certaines fonctionnalités. En effet, beaucoup des différentes fonctionnalités me prirent énormément de temps à imaginer et à implémenter. De plus, le management du travail en équipe fut difficile à mettre en place pour réaliser le projet.
-
-Conclusion :
-
-L’élaboration de ce projet me prit à cœur. C’est pourquoi mon implication ne fut pas moindre afin d’aider au mieux mon groupe à élaborer ce projet. Si cela était à refaire, j’imagine que j’essayerais de me poser un peu mieux afin de réfléchir à la manière d’implémenter les différentes fonctionnalités demandées. 
-
-De plus, j’essayerais de prendre un peu plus de pause afin d’éviter de me surcharger la tête. Ainsi, cela pourrait être un de mes objectifs pour le BUT 2 car en effet, ce projet me mis pas mal la pression. Pour cela, rien de tel qu’un peu plus de repos et de méditation afin de me détendre, permettant une réflexion et une appréciation du projet plus concret. 
-
-Pour finir, il est bon de ne mentionner que ce projet eu un réel impact sur mon projet professionnel. En effet, il s’agit là de ma première élaboration d’application concrète et cela m’a plus énormément. Il se pourrait que cette SAE me fît réfléchir un peu mieux à mes objectifs professionnels futurs.`,
-        pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S2/SAE_2_1_Algo/Projet?ref_type=heads"
-    },
-    SpaceOfQuestion: {
-        element: document.getElementById("SpaceOfQuestion"),
-        bgImage: "IMG/Space_Of_Questions.png",
-        title: "Space Of Questions",
-        description: `"Space Of Questions" est un jeu de questions ludo-pédagogique destiné à des élèves de primaire, leur permettant ainsi de réviser leurs leçons de manière amusante. Le jeu propose 4 modes de jeux : le mode « Facile » (composé de 10 vies), le mode « Moyen » (composé de 6 vies), le mode « Difficile » (composé de 3 vies), le mode « Mort Subite » (composé d’une seule et unique vie) et pour finir, le mode Entraînement (composé d’un nombre infini de vies). L’objectif est ainsi de répondre correctement à des questions (une mauvaise réponse équivaut à une perte de vie). Une fois toutes les vies perdues, la partie se termine et le résultat final s’affiche.
-
-
-Compétences acquises:
-
-Durant ce travail en autonomie, j’ai appris beaucoup de choses en ijava (langage élaboré par l’IUT afin d’apprendre les bases du développement), notamment la manière de sauvegarder des données ou bien l’optimisation de code. Ainsi, ce projet fut une belle expérience nous permettant de mettre un pas dans le développement informatique et notamment dans le langage java.
-
-Ce projet m’a  également permis d’apprendre à stocker des données et à savoir les réutiliser comme bon me semble. Il s'agit là d'une compétence majeure d'un programmeur essentiel à maîtriser. Ainsi, que cette compétence fasse partie de ce projet est une bonne chose.
-
-Ainsi, étant en autonomie, il est vrai que j’ai dû apprendre à surmonter les problèmes par moi-même, notamment du côté du débogage du code. D’autres problèmes ont dû être réglé tel que la syntaxe des CSV (données), ou encore les problèmes de sauvegarde de données. Cela fut un bon entraînement est une bonne compétence à expérimenté.
-
-
-Savoir être:
-
-L’autonomie : Ce projet m’a permis d’améliorer mon organisation personnelle, améliorant ainsi ma capacité à travailler de manière autonome et à régler de nombreux problèmes individuellement (concernant mon travail personnel).
-
-Entraide / travail en équipe : durant toute la durée du travail, l’entraide et le travail en équipe fût la base de toute réussite. Ainsi, j’ai pu me renforcer quant à ces deux compétences personnelles notamment grâce à des conseils mutuels avec mon coéquipier ainsi qu'une grande communication.
-
-Créativité : J’ai également eu l’occasion d’améliorer ma créativité lors de ce projet, en imaginant toujours plus de nouvelles fonctionnalités originales à ajouter au jeu. J'ai également eu l'occasion d'imaginer plusieurs types de design pour l'interface du jeu.
-
-Communication : La communication est évidemment fortement liée au travail d’équipe. C’est pourquoi j’ai eu l’occasion de perfectionner ma communication par le biais de rapports détaillés quant à mes modifications sur le projet, et ce, auprès de mon partenaire.
-
-
-Bilan:
-
-Points forts :
-
-Ayant déjà pratiqué le développement informatique dans le passé avec des langages similaire au java, je n’ai pas eu de difficultés majeures sur ce point. Il s’agit là de mon point le plus fort. J’ai également eu quelques facilités quant au management du projet avec mon groupe.
-
-Mes difficultés et points à améliorer :
-
-Lors de ce projet, j’ai rencontré quelque difficultés concernant la créativité et la réflexion. En effet, trouver les idées de fonctionnalités à implémenter fut un réel challenges pour ma part et cela devrait être un point majeur devant être amélioré. Sur ce point, ma faiblesse est la dépendance des autres.
-
-Conclusion :
-
-Ce projet me permit d’apprendre réellement les bases du développement informatique. Mon objectif fut ainsi de m’investir au maximum de manière autonome et collectif afin de progresser dans ce domaine. Si un tel projet était à refaire, j’essayerais de travailler ma réflexion afin d’améliorer ma créativité.
-
-Par ailleurs, améliorer mon organisation serait également un point majeur, car peu convainquant pour ce projet. Pour cela, développer de nouveaux projets personnels pourrait être une excellente idée afin de travailler ces points essentiels.
-
-Si j’avais un objectif à me donner pour le BUT 2, cela serait sans nul doute progressé en développement java, notamment par le biais d’entraînement et de pratiques régulières de ce langage durant mon temps libre. 
-
-Cette SAE a grandement influencé mon projet personnel. En effet, étant à l’origine un grand fan de développement web, il est vrai que ce projet m’a permis de revoir mes objectifs futurs, car en effet, j’ai adoré la partie développement d’application de cette SAE, me donnant ainsi l’envie d’en apprendre davantage.`,
-        pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S1/SAE%201_2%20comparaison%20d'algo/SpaceOfQuestions?ref_type=heads"
-    },
-    Covoiturage: {
-        element: document.getElementById("Covoiturage"),
-        bgImage: "IMG/Covoiturage.png",
-        title: "Covoiturage",
-        description: `Blizzard Entertainment Covoiturage est un service de covoiturage et de location de véhicules à destination des employés de l’entreprise (Blizzard Entertainment). Ces services sont présentés sont la forme d’une nouvelle page web présente pour les employés de manière totalement privée. Cette page web comporte une présentation des services ainsi que leurs utilités (page « accueil »), mais également une page « questionnaire » comportant un questionnaire pouvant être rempli par les employés afin d’aider l’entreprise à améliorer ces services, ainsi qu’une page dédiées aux services permettant de remplir un formulaire afin de proposer un service, ou de consulter les services déjà existants afin de s’y inscrire. Pour finir, le site comporte également une page « contacts » représentant les personnes ayant travaillées sur ce projet ainsi que leur mail et numéro de téléphone professionnel.
-
-Compétences acquises
-
-Apprentissage du HTML : lors de ce projet, nous avons eu l’occasion d’apprendre le langage informatique HTML en conditions réelles de manière totalement autonome.
-
-Apprentissage du CSS : Nous avons également eu l’occasion d’apprendre de manière complète et autonome le CSS lors de ce projet, améliorant ainsi notre créativité.
-
-Contrôle de saisie : Plusieurs contrôles de saisies furent réalisés notamment sur les tarifs du service de location de véhicules afin d’éviter les taux trop élevés. Ainsi, cela fût un point important lors de ce projet afin d’éviter toute saisie non désirées.
-Ordonnance des menus : L’ordonnance des menus furent une compétence importante à acquérir lors de ce projet permettant ainsi d’accéder à un visuel agréable et compréhensible pour tous.
-
-Visuel attractif : Il s’agit là d’un point majeur de notre projet. La présence d’un visuel attractif et compréhensible fût l’objectif principal du projet, nous permettant également de faire preuve d’imagination.
-
-Rédaction correcte en français : Ce projet, visant à simuler de manière professionnelle l’élaboration d’un service de covoiturage en ligne, nous a ainsi permis d’améliorer notre rédaction en français, notamment par le biais de longs textes explicatifs disposés à plusieurs endroits du site, comme l’analyse du questionnaire, par exemple.
-
-Savoir être
-
-savoir travailler en équipe : Ce travail nous a permis de renforcer nos capacités à travailler en équipe notamment à l’aide des décisions communes partagées au sein de cette dernière. Être à l’écoute des autres et respecter les choix de chacun furent également un des points forts du travail en équipe.
-
-La communication : Point très important dans ce projet, la communication au sein du groupe. Nous avons fait preuve d’une grande communication vis-à-vis du travail effectué et/ou à faire afin de nous organiser de la meilleure des manières.
-
-L’organisation : Lors de ce projet, nous avons fait preuve d’une bonne organisation en décomposant ainsi le travail ou bien même en organisant plusieurs réunions afin de faire le point sur ce qui a été fait et sur ce qu’il nous restait à faire.
-
-Rédaction en français : Plusieurs textes furent rédigés sur différentes pages de notre projet afin de présenter de manière attractive les objectifs de notre projet, permettant ainsi de nous améliorer à la réaction de texte en français.
-
-Bilan
-
-Points forts :
-
-Tout au long de ce projet, j’ai eu l’occasion d’apprendre de manière efficace les langages HTML et CSS notamment par le biais de plusieurs heures de travail sur le développement du site. J’ai également réussi à améliorer ma créativité ainsi que mon imagination notamment lors de la conception de la maquette de la page web.
- 
-De plus, comme précisé précédemment, je dispose dorénavant d’une meilleure compétence de rédaction en français, ce qui ne fût pas totalement le cas auparavant. Pour finir, j’ai su drastiquement améliorer mon organisation personnelle (qui fût jusque-là assez déplorable), notamment par le biais de « to do list » (liste de choses à faire) ou de schémas récapitulatifs du travail à faire et/ou déjà fait.
-
-
-Mes difficultés et points à améliorer :
-
-Lors de ce projet, je me suis rendu compte que ma capacité à optimiser mon code lors de ce travail fût mon principal défaut. En effet, il fut ainsi compliqué pour moi ainsi que mes camarades de me retrouver dans les nombreuses lignes de code du fichier. Toujours du côté informatique, j’ai également rencontré quelques difficultés lors de la mis en place du « résponsive » de la page (= capacité de la page à garder une forme correcte selon la taille de cette dernière). 
-
-Pour finir, il est vrai que la manière de partager les modifications faites n’était pas la plus optimale. En effet, pour ce faire, nous avons fait appel à un site nommé « replit ». Il s’agit d’une application permettant de développer un site internet de manière interactif et simultané entre plusieurs membres d’un même groupe ou d’une organisation. Cependant, lorsque l’on dépasse une certaine taille de fichier/dossier, le site à parfois tendance à être extrêmement ralenti, ralentissant considérablement, évidemment. Pour y remédier, nous aurions dû utiliser d’autres outils plus efficaces, comme github, par exemple.
-
-Conclusion :
-
-J’ai énormément pris à cœur ce projet, me passionnant davantage quant au développement de pages web, notamment en HTML et CSS. Ainsi, ma volonté d’implication lors de ce projet me permit d'augmenter ma soif d’en apprendre toujours plus vis-à-vis de cet univers. Ainsi, en dehors de ce projet, je consacrai un peu de mon temps dans l’apprentissage de ces langages afin de mener à bien ce projet et d’améliorer mes connaissances sur le sujet. 
-
-J’ai également énormément participé à la communication au sein de l’équipe, notamment grâce à ma grande compétence d’interaction au sein de cette dernière, me permettant ainsi que réunir les idées de chacun afin de mener à bien ce projet. Si l’occasion me vient un jour de recommencer un projet comme tel, je pense que je mettrais un point d’honneur sur l’organisation, mais également sur mes points faibles rencontrés lors de ce projet, comme le manque d’optimisation, par exemple. 
-
-Ainsi, je changerais ma façon de penser lorsque je rédigerais le code de la page, notamment en choisissant les manières de faire les plus optimisées possibles. Ainsi, pour la suite de mes études, j’aimerais me lancer pour objectif d’améliorer mes compétences en développement web, car il s’agit là d’un domaine qui me fascine énormément, ce qui renforce mon envie d’en apprendre toujours plus quant à ce domaine. Ainsi, la mise en place d’une séance de révision/apprentissage régulier pourrait être envisageable afin de réaliser cet objectif (en utilisant également certaines applications d’apprentissage en ligne, tel que « mimo », par exemple). Ainsi, ce travail a eu une grande influence sur mon projet professionnel, car comme cité précédemment, elle m’a permis de me rendre compte qu’une des choses me passionnant le plus dans l’informatique était le développement de pages web, notamment ce qu’on appel le « front-end » (HTML, CSS et Javascript). Mon parcours professionnel se tournera donc vers ce chemin-là, si l’occasion se présente.
-`,
-        pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S1/SAE%201.5_1.6%20RdB/Fantuz-Chrobot,%20Devos,%20Okubo,%20Henneron%20site%20RdB%20(Blizzard%20Entertainment)"
-    },
-    Banko: {
-        element: document.getElementById("Banko"),
-        bgImage: "IMG/Banko.png",
-        title: "Banko",
-        description: "Banko est un site web en cours de développement pour gérer et stocker les achats récents en local.",
-        pageWeb: "https://gitlab.com/leo9440022/sites-perso/-/tree/main/Banko?ref_type=heads"
-    },
-    Activities: {
-        element: document.getElementById("Activities"),
-        bgImage: "IMG/Activities.png",
-        title: "Activities",
-        description: `"Activities" est une application développée en java et javaFX permettant d'afficher des activités que nous avont ajoutée dans un fichier CSV et pouvoir avoir un détail de ces dernières, avec possibilité de les évaluer. Cette application sert ainsi à programmer des activités en famille et bien plus.
-
-
-Compétences acquises:
-
-Durant ce travail personnel, j’ai appris beaucoup de choses en javaFX, notamment la manière de gérer des évènements en temps réel, comme le like des activités et bien plus.
-
-Ce projet m’a  également permis d’apprendre à manipuler des données CSV afin d'y ajouter, supprimer et mes modifier des données.
-
-Ainsi, étant en autonomie, il est vrai que j’ai dû apprendre à surmonter les problèmes par moi-même, notamment du côté du débogage du code. D’autres problèmes ont dû être réglé tel que la syntaxe des CSV (données), ou encore les problèmes de sauvegarde de données. Cela fut un bon entraînement est une bonne compétence à expérimenté.
-
-
-Savoir être:
-
-L’autonomie : Ce projet m’a permis d’améliorer mon organisation personnelle, améliorant ainsi ma capacité à travailler de manière autonome et à régler de nombreux problèmes individuellement (concernant mon travail personnel).
-
-Créativité : J’ai également eu l’occasion d’améliorer ma créativité lors de ce projet, en imaginant toujours plus de nouvelles fonctionnalités originales à ajouter à l'application. J'ai également eu l'occasion d'imaginer plusieurs types de design pour l'interface.
-
-La documentation : J'ai eu l'occasion d'énormément progresser en consultation de la documentation, m'ayant ainsi permis d'élaborer ce projet dans les meilleures conditions possibles.
-
-Bilan:
-
-Points forts :
-
-Ayant déjà pratiqué le développement informatique dans le passé avec des langages similaire au java, je n’ai pas eu de difficultés majeures sur ce point. Il s’agit là de mon point le plus fort. J’ai également eu quelques facilités avec le javaFX car j'ai eu l'occasion de le pratiquer pas mal de fois durant mes études.
-
-Mes difficultés et points à améliorer :
-
-Lors de ce projet, j’ai rencontré quelques difficultés concernant la créativité et la réflexion. En effet, l'élaboration du design n'a pas était la tâches la plus facile dû à mes difficultés dans cette compétence.
-
-Conclusion :
-
-Ce projet me permit d’apprendre réellement les bases du développement informatique. Mon objectif fut ainsi de m’investir au maximum de manière autonome afin de progresser dans ce domaine. Si un tel projet était à refaire, j’essayerais de travailler ma réflexion afin d’améliorer ma créativité.
-
-Par ailleurs, améliorer mon organisation serait également un point majeur, car peu convainquant pour ce projet. Pour cela, développer de nouveaux projets personnels pourrait être une excellente idée afin de travailler ces points essentiels.
-
-Si j’avais un objectif à me donner pour le BUT 2, cela serait sans nul doute progressé en développement java, notamment par le biais d’entraînement et de pratiques régulières de ce langage durant mon temps libre. 
-
-Cette SAE a grandement influencé mon projet personnel. En effet, étant à l’origine un grand fan de développement d'application, il est vrai que ce projet m’a permis de revoir mes objectifs futurs, car en effet, j’ai adoré la partie développement d’application de cette SAE, me donnant ainsi l’envie d’en apprendre davantage.
-`,
-        pageWeb: "https://gitlab.com/leo9440022/java-projects/-/tree/main/site-alicia?ref_type=heads"
-    },
-    BDD: {
-        element: document.getElementById("BDD"),
-        bgImage: "IMG/exploitation_BDD.png",
-        title: "Exploitation BDD",
-        description: `La SAE 1.04 d’introduction aux bases de données eut pour objectif de nous initier à ces dernières. L’objectif était de créer plusieurs tables au sein d’une base de données en fonction d’un thème donné. Nous avions également pour objectif d’élaborer des requêtes permettant la recherche dans ces fameuses tables, ainsi que des formulaires et des états, et tout cela sur l’application Access de Microsoft.
-
-La SAE 2.04 permis d’approfondir nos connaissances sur les bases de données. En partant d’un fichier CSV de 128 colonnes et 13 000 lignes, l’objectif fut l’importation de ce dernier sur postgresql, mais également la ventilation des données ainsi que l’exécution de certaines requêtes afin d’accéder à certaines informations de la base. Ainsi, la SAE 2.04 nous permit de commencer l’élaboration d’une base de données en partant de zéro, uniquement avec des données sous format CSV. Pour finir, une partie requêtage intense fut exercé pour la partie statistique, mais également pour la partie Anglais de la SAE à l’aide d’un nouveau fichier CSV, ainsi qu’une histoire en gestion permettant l’énumération de nos coûts nécessaire au suivi de nos études.
-
-Compétences acquises
-
-importation des données : savoir importer des données fut le point de départ de la SAE. Ainsi, cela fut l’une des compétences principales nécessaire à la réalisation du projet.
-
-Utilisation de postgresql : après un changement de logiciel permettant d’utiliser notre base de données, nous avons dû nous habituer à une nouvelle application.
-
-Recherche dans la documentation : Nous avons parfois eu besoin de consulter la documentation afin de régler certains problèmes.
-
-Utilisation de SQL : évidemment, cela va sans dire, une utilisation correcte du SQL fut nécessaire à l’élaboration de ce projet.
-
-Savoir être
-
-Patience : La patience fut la clé de ce projet dû aux nombreux problèmes parfois difficile à régler.
-
-Autonome : Savoir travailler en autonomie fut important pour cette SAE. Trouver, comprendre et régler les problèmes rencontrés constitue une grande partie des SAE.
-
-Organisation : savoir organiser son travail pour rendre le travail proprement et dans les temps fut nécessaire lors de ces projets.
-
-Bilan
-
-Points forts :
-
-Durant ce projet, j’ai appris convenablement à importer une base de données, mais également à ventiler / créer les tables nécessaires ainsi qu’exécuter les bonnes requêtes pour répondre aux bonnes questions. De plus, ce projet me permit d’améliorer mon autonomie, mon organisation ainsi que ma réflexion.
-
-
-Mes difficultés et points à améliorer :
-
-Certes, j’ai eu l’occasion de rencontrer quelques problèmes, notamment lors de l’élaboration des tables. Pour être plus précis, l’ajout des clés étrangères et primaire fut compliqué dû à certains problèmes d’association. De plus, j’ai également rencontré certaines difficultés lors du téléchargement du fichier de données et le traitement de ces derniers, notamment à des mauvais algorithmes java ou des mauvaise commande de téléchargement.
-
-Conclusion :
-
-Travailler tous les points du projet, et ce, de manière autonome fut pour moins un objectif important afin d’améliorer mes connaissances en base de données. Malgré cela, il est vrai que l’entraide au sein de mon groupe m’a permis de régler pas mal de problème et d'apprendre énormément de chose. Si ces projets étaient à refaire, je pense que j’essayerais d’améliorer mes techniques d’approches. 
-
-En effet, je rencontrai quelques problèmes quant à la réflexion vis-à-vis de la manière de réaliser les tâches attendues. Ainsi, pour le BUT 2, j’aimerais me donner l’objectif d’améliorer mes connaissances en BDD en révisant un peu plus mes cours et en posant un peu plus de question concernant les points faibles que je pourrais rencontrer. 
-
-Pour finir, bien que ces SAE n’aient pas forcément eu d’impact sur mon projet personnel, cela m’a permis d’apprendre convenablement à utiliser et à exploiter les bases de données, point important dans le développement informatique.`,
-        pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S2/SAE%202.4%20BDD?ref_type=heads"
-    },
-    FindUrWay: {
-        element: document.getElementById("FindUrWay"),
-        bgImage: "IMG/FindUrWay.png",
-        title: "Find Ur Way",
-        description: "Site répertoriant des sites web en fonction de leur catégorie pour faciliter la recherche de contenu.",
-        pageWeb: "https://gitlab.com/leo9440022/sites-perso/-/tree/main/FindUrWay?ref_type=heads"
-    },
-    SpaceClicker: {
-        element: document.getElementById("SpaceClicker"),
-        bgImage: "IMG/SpaceClicker.png",
-        title: "Space Clicker",
-        description: `"Space Of Questions" est un jeu de questions ludo-pédagogique destiné à des élèves de primaire, leur permettant ainsi de réviser leurs leçons de manière amusante. Le jeu propose 4 modes de jeux : le mode « Facile » (composé de 10 vies), le mode « Moyen » (composé de 6 vies), le mode « Difficile » (composé de 3 vies), le mode « Mort Subite » (composé d’une seule et unique vie) et pour finir, le mode Entraînement (composé d’un nombre infini de vies). L’objectif est ainsi de répondre correctement à des questions (une mauvaise réponse équivaut à une perte de vie). Une fois toutes les vies perdues, la partie se termine et le résultat final s’affiche.
-
-
-Compétences acquises
-
-Durant ce travail en autonomie, j’ai appris beaucoup de choses en ijava (langage élaboré par l’IUT afin d’apprendre les bases du développement), notamment la manière de sauvegarder des données ou bien l’optimisation de code. Ainsi, ce projet fut une belle expérience nous permettant de mettre un pas dans le développement informatique et notamment dans le langage java.
-
-Ce projet m’a  également permis d’apprendre à stocker des données et à savoir les réutiliser comme bon me semble. Il s'agit là d'une compétence majeure d'un programmeur essentiel à maîtriser. Ainsi, que cette compétence fasse partie de ce projet est une bonne chose.
-
-Ainsi, étant en autonomie, il est vrai que j’ai dû apprendre à surmonter les problèmes par moi-même, notamment du côté du débogage du code. D’autres problèmes ont dû être réglé tel que la syntaxe des CSV (données), ou encore les problèmes de sauvegarde de données. Cela fut un bon entraînement est une bonne compétence à expérimenté.
-
-
-Savoir être
-
-L’autonomie : Ce projet m’a permis d’améliorer mon organisation personnelle, améliorant ainsi ma capacité à travailler de manière autonome et à régler de nombreux problèmes individuellement (concernant mon travail personnel).
-
-Entraide / travail en équipe : durant toute la durée du travail, l’entraide et le travail en équipe fût la base de toute réussite. Ainsi, j’ai pu me renforcer quant à ces deux compétences personnelles notamment grâce à des conseils mutuels avec mon coéquipier ainsi qu'une grande communication.
-
-Créativité : J’ai également eu l’occasion d’améliorer ma créativité lors de ce projet, en imaginant toujours plus de nouvelles fonctionnalités originales à ajouter au jeu. J'ai également eu l'occasion d'imaginer plusieurs types de design pour l'interface du jeu.
-
-Communication : La communication est évidemment fortement liée au travail d’équipe. C’est pourquoi j’ai eu l’occasion de perfectionner ma communication par le biais de rapports détaillés quant à mes modifications sur le projet, et ce, auprès de mon partenaire.
-
-Bilan
-
-Points forts :
-
-Ayant déjà pratiqué le développement informatique dans le passé avec des langages similaire au java, je n’ai pas eu de difficultés majeures sur ce point. Il s’agit là de mon point le plus fort. J’ai également eu quelques facilités quant au management du projet avec mon groupe.
-
-Mes difficultés et points à améliorer :
-
-Lors de ce projet, j’ai rencontré quelque difficultés concernant la créativité et la réflexion. En effet, trouver les idées de fonctionnalités à implémenter fut un réel challenges pour ma part et cela devrait être un point majeur devant être amélioré. Sur ce point, ma faiblesse est la dépendance des autres.
-
-Conclusion :
-
-Ce projet me permit d’apprendre réellement les bases du développement informatique. Mon objectif fut ainsi de m’investir au maximum de manière autonome et collectif afin de progresser dans ce domaine. Si un tel projet était à refaire, j’essayerais de travailler ma réflexion afin d’améliorer ma créativité.
-
-Par ailleurs, améliorer mon organisation serait également un point majeur, car peu convainquant pour ce projet. Pour cela, développer de nouveaux projets personnels pourrait être une excellente idée afin de travailler ces points essentiels.
-
-Si j’avais un objectif à me donner pour le BUT 2, cela serait sans nul doute progressé en développement java, notamment par le biais d’entraînement et de pratiques régulières de ce langage durant mon temps libre. 
-
-Cette SAE a grandement influencé mon projet personnel. En effet, étant à l’origine un grand fan de développement web, il est vrai que ce projet m’a permis de revoir mes objectifs futurs, car en effet, j’ai adoré la partie développement d’application de cette SAE, me donnant ainsi l’envie d’en apprendre davantage.
-`,
-        pageWeb: "https://gitlab.com/leo9440022/SAE/-/tree/main/S3/Mini-Projet?ref_type=heads"
-    },
-    Classification: {
-        element: document.getElementById("Classification"),
-        bgImage: "IMG/Classification.png",
-        title: "Classification",
-        description: "Le projet de classification consiste à classifier des données contenues dans un fichier CSV en fonction de critère de tri (dans l'exemple, il s'agit d'Iris triables par taille de pétale et bien plus). Ce projet fût entièrement développé en java et javaFX et les données sont ainsi représentées dans un nuage de points. L'algorithme de classification utilisé est l'algorithme K-NN permettant ainsi de classifier automatiquement les données en fonction des autres.\nCe projet m'a permis de développer les compétences suivantes:\n\n- Autonomie: L'autonomie a été au cœur même de ce projet, me permettant de m'améliorer sur ce point en cherchant par moi-même les réponses à mes questions.\n\n-Développement javaFX: J'ai ainsi appris à m'améliorer dans le développement en javaFX me permettant ainsi de faire des interface assez facilement.\n\n-Résolution de problème: Dû à un grand nombre de problèmes rencontrés durant ce projet, la résolution de problème est l'une des compétences la plus travaillée.\n\n-Travail en équipe: Travailler en équipe était évidemment l'objectif principal de ce projet et cela à permis d'améliorer certains points tels que le travail en méthodes agiles ou l'utilisation de git, par exemple.\n\nLes principaux problèmes rencontrés concernent le nuage de point, car les outils fournis par javaFX ne nous permettait pas vraiment de réaliser le projet comme prévu car trop limité.",
-        pageWeb: ""
-    },
-    LilloChat: {
-        element: document.getElementById("LilloChat"),
-        bgImage: "IMG/LilloChat.png",
-        title: "LilloChat",
-        description: "LilloChat est un réseau social élaboré en JEE (ici, développer avec Tomcat) permettant de communiquer entre amis au même titre que le célèbre réseau social Discord. Nous avons la possibilité d'envoyer des messages / images, créer des channels, en rejoindre et même modifier nos informations personnelles (y compris la photo de profil). Ce projet est néanmoins développé sans javascript, spécificité de ce dernier.\n\nCe projet m'a permis de développer les compétences suivantes:\n\n- Autonomie: Tout au long de ce projet, nous avons eu besoin de faire preuve d'une grande autonomie pour résoudre les nombreux conflits.\n\n-Développement JEE: J'ai ainsi appris à m'améliorer dans le développement JEE notamment coté base de données mais également niveau Servlet.\n\n-Travail en équipe: Travailler en équipe était évidemment l'objectif principal de ce projet et cela à permis d'améliorer certains points tels que le travail en méthodes agiles ou l'utilisation de git, par exemple.\n\n-Design: Étant pas très doué en design, ce projet m'a permis de grandement m'améliorer sur ce point en faisant travailler ma réflexion ainsi que ma créativité.\n\nLe principal problème rencontré durant de projet est la fonctionnalité d'envoie de photos. En effet, dans le cadre de ce projet, nous avons dû sauvegarder directement les images dans la bases de données, ce qui n'est pas simple en JEE.",
-        pageWeb: ""
-    },
-    Steveio: {
-        element: document.getElementById("Steveio"),
-        bgImage: "IMG/Steveio.png",
-        title: "Steve.io",
-        description: "Le projet de Steve.io consiste à créer un jeu dans le thème du jeu agar.io uniquement en javascript en se basant sur le principe de SPA (Single Page App). Ce projet comprenait certains points techniques comme les fonctionnalités de jeu ou bien même une obligation de clean code correct. L'objectif ici à était d'apprendre le javascript de manière amusante et complète, permettant ainsi de nous introduire à l'apprentissage de React JS de manière efficace.\n\nCe projet m'a permis de développer les compétences suivantes:\n\n- Autonomie: L'autonomie a été un des points clés de ce projet, notamment lors de la correction de bugs ou implémentation de fonctionnalités technique ne pouvant être travaillé en équipe, hormis en 'super programming'.\n\n-Développement javascript: La compétence principale apprise durant ce projet est le javascript. Nous avons appris à faire de la TDD, utiliser les canvas ou bien même a maîtriser le clean code sur un langage encore peu pratiquer jusque là.\n\n-Résolution de problème: Dû à un grand nombre de problèmes rencontrés durant ce projet, la résolution de problème est l'une des compétences la plus travaillée.\n\n-Travail en équipe: Travailler en équipe était évidemment l'objectif principal de ce projet et cela à permis d'améliorer certains points tels que le travail en méthodes agiles ou l'utilisation de git, par exemple.\n\nLes principaux problèmes rencontrés durant ce projet étaient notamment, pour ma part, le développement des fonctionnalités comprenant des mathématiques tels que le suivi de la caméra sur le joueur ou bien même la hitbox de ce dernier. Ces problèmes ont étaient compliqué à régler car cela nécessitait des formules peu instinctives, mais qu'après un peu de réflexion, ces problèmes on étaient réglés.",
-        pageWeb: ""
+    // ==========================================
+    // 1. DICTIONNAIRE DE TRADUCTION (i18n)
+    // ==========================================
+    const translations = {
+        fr: {
+            "nav_profil": "// Profil",
+            "nav_skills": "// Compétences",
+            "nav_experience": "// Expérience",
+            "nav_perso": "// Personnel",
+            "nav_projets": "// Scolaire",
+            "nav_contact": "// Contact",
+            "hero_title": "Bonjour, je suis Léo.",
+            "hero_subtitle": "Développeur Full-Stack",
+            "hero_desc": "Étudiant en 3ème année de BUT Informatique à Villeneuve d'Ascq. Créateur d'expériences numériques, actuellement développeur Full-Stack en alternance chez Nextoo.",
+            "hero_btn_projects": "Mon parcours",
+            "hero_btn_cv": "Mon CV",
+            "section_about": "À propos",
+            "about_text": "Passionné par le code créatif, j'aime transformer des idées complexes en interfaces fluides et intuitives. Curieux de nature, j'explore constamment de nouvelles technologies pour enrichir mon panel de compétences Full-Stack.",
+            "skill_curiosity": "Curiosité",
+            "skill_passion": "Passion",
+            "skill_autonomy": "Autonomie",
+            "skill_patience": "Patience",
+            "section_stack": "Stack Technique globale",
+            "section_experience": "Parcours Professionnel",
+            "section_perso": "Projets Personnels",
+            "section_projects": "Projets Scolaires",
+            "section_contact": "Contact",
+            
+            "company_nextoo_desc": "Entreprise de Services du Numérique (ESN) spécialisée dans l'accompagnement et la transformation digitale sur-mesure.",
+            "title_my_journey": "Mon parcours chez eux",
+            "company_nextoo_journey": "J'ai débuté mon aventure chez Nextoo en mars 2025 à travers un stage intensif au sein de la « Nextoo Academy ». À l'issue de cette période hautement formatrice, j'ai eu l'opportunité de poursuivre l'aventure en alternance dès septembre 2026. J'ai d'abord intégré le projet Portail Nextoo Formateur (PNF), avant de rejoindre en parallèle le projet Gestion Des Stocks (GDS) en novembre 2026. Cette évolution m'a permis d'acquérir une forte autonomie et de consolider mon expertise Full-Stack et DevOps.",
+
+            // --- PROJETS NEXTOO ---
+            "proj_nextoo_academy_title": "Stage - Nextoo Academy",
+            "proj_nextoo_academy_desc": "Immersion technique et formation interne intensive (Mars 2025 - Aujourd'hui).",
+            "proj_nextoo_academy_long": "<strong>Période :</strong> De Mars 2025 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Dans le cadre de mon stage, j’ai intégré la Nextoo Academy. Ce programme m’a permis d’enrichir considérablement mes compétences Full-Stack et d'élargir mon bagage technique aux pratiques DevOps et à la conformité RGPD.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement en Java-EE (JPA/Hibernate, Spring Boot, API REST, POO avancée).</li><li>Développement Front-End en Vue.js (Promesses, i18n).</li><li>Mise en place de tests automatisés (JUnit, Mockito) et application des règles de Clean Code via SonarQube.</li><li>Initiation DevOps : Conteneurisation Docker, pipelines GitLab-CI, déploiement PostgreSQL.</li><li>Suivi de formation Scrum By Nextoo (Rituels, rôles, manifeste).</li></ul>",
+            "proj_nextoo_academy_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>GitLab-CI</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Agile Scrum</span>",
+
+            "proj_nextoo_pnf_title": "Alternance - Projet PNF",
+            "proj_nextoo_pnf_desc": "Développement du \"Portail Nextoo Formateur\" (Septembre 2026 - Aujourd'hui).",
+            "proj_nextoo_pnf_long": "<strong>Période :</strong> Septembre 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Durant mon alternance, j’ai intégré le projet PNF permettant aux tuteurs de la Nextoo Academy de suivre l'avancée de leurs stagiaires (assignation de formations, commentaires, suivi de compétences).<br><br><strong>Missions et réalisations :</strong><ul><li>Développement Full-Stack (Java/Spring Boot, Vue.js, PostgreSQL).</li><li>Découverte de l'écosystème DevOps avancé (Trivy, ArgoCD, Liquibase pour l'automatisation des BDD).</li><li>Participation active à l'ensemble des cérémonies Scrum et documentation via Jira/Confluence/Swagger.</li></ul>",
+            "proj_nextoo_pnf_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>ArgoCD / Trivy</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>Swagger</span>",
+
+            "proj_nextoo_gds_title": "Alternance - Projet GDS",
+            "proj_nextoo_gds_desc": "Développement du projet \"Gestion des Stocks\" (Novembre 2026 - Aujourd'hui).",
+            "proj_nextoo_gds_long": "<strong>Période :</strong> Novembre 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>En parallèle du projet PNF, j’ai réintégré le projet GDS, visant à recenser le matériel et les véhicules de l’entreprise, tout en assurant le suivi de leurs attributions et de leur maintenance.<br><br><strong>Missions et réalisations :</strong><ul><li>Consolidation d'expertise sur la stack Java/Spring et Vue.js avec une forte exigence sur la qualité du code.</li><li>Intervention poussée sur la chaîne d'intégration et de déploiement continu (CI/CD).</li><li>Gestion des environnements locaux et distants, utilisation de Postman/Bruno pour l'architecture d'API.</li></ul>",
+            "proj_nextoo_gds_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker / CI-CD</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>Bruno</span>",
+
+            // --- PROJETS PERSONNELS ---
+            "proj_scarlea_title": "Scarlea",
+            "proj_scarlea_desc": "Application mobile React-Native de suivi du cycle menstruel.",
+            "proj_scarlea_long": "<strong>Période :</strong> De Mars 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><br>En parallèle de mon alternance, je réalise \"Scarlea\", une application mobile centralisant le suivi des cycles menstruels et des conseils (santé, beauté). 100% gratuite, elle m'a permis de gérer un projet de A à Z en autonomie complète.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement back-end en Java (Spring Boot, Spring MVC, JPA/Hibernate, API REST).</li><li>Développement d'interfaces mobiles en JavaScript avec React-Native (Expo-Router).</li><li>Mise en place de l'infrastructure Docker (Windows/Linux) et versioning de la base PostgreSQL avec Liquibase.</li><li>Conception stratégique, choix d'architecture et gestion de projet via Jira et GitHub.</li></ul>",
+            "proj_scarlea_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React-Native (Expo)</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+
+            // --- PROJETS SCOLAIRES ---
+            "proj_startup_title": "Startup Week - TransmissionPro",
+            "proj_startup_desc": "Application médicale avec transcription vocale (React.js / Spring).",
+            "proj_startup_long": "<strong>Période :</strong> Du 9 au 13 Mars 2026<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Lors de ma 3ème année de BUT, au sein d’une équipe de 5, j’ai travaillé sur “TransmissionPro”, une application permettant aux soignants de réaliser leurs transmissions médicales via transcription vocale (API OpenAI).<br><br><strong>Missions et réalisations :</strong><ul><li>Sécurisation de l'application via Spring Security (filtres de requêtes, CORS).</li><li>Développement Front-End avec React.js et React-Router (SPA).</li><li>Déploiement PostgreSQL sous Docker et versioning avec Liquibase.</li><li>Pilotage de projet et API via GitLab Issues et Bruno.</li></ul>",
+            "proj_startup_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>OpenAI API</span>",
+
+            "proj_lillochat_title": "LilloChat",
+            "proj_lillochat_desc": "Réseau social JEE sans JavaScript (Apache Tomcat, PostgreSQL).",
+            "proj_lillochat_long": "<strong>Période :</strong> Février-Mars 2025<br><strong>Rôle :</strong> Développeur JEE<br><br>Lors de ma 2ème année de BUT, j'ai conçu en binôme une plateforme de discussion en environnement JEE, adossée à un serveur Apache Tomcat et une BDD PostgreSQL. Contrainte majeure : concevoir l'intégralité de l'application sans utiliser le moindre script JavaScript.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement en Java Enterprise Edition (POO).</li><li>Intégration HTML/CSS et gestion de version avec Git.</li><li>Utilisation des Sockets sous Apache Tomcat.</li></ul>",
+            "proj_lillochat_tech": "<span class='skill-badge'>Java EE</span> <span class='skill-badge'>Apache Tomcat</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>HTML/CSS</span>",
+
+            "proj_steveio_title": "Steve.io",
+            "proj_steveio_desc": "Jeu web SPA en JavaScript natif (Clone d'Agar.io).",
+            "proj_steveio_long": "<strong>Période :</strong> Mars 2025<br><strong>Rôle :</strong> Développeur JavaScript<br><br>Jeu web reprenant les mécaniques du célèbre Agar.io, revisité dans l'univers de Minecraft. Contrainte technique : conception sous forme de Single Page Application (SPA) en utilisant exclusivement du JavaScript natif (sans framework).<br><br><strong>Missions et réalisations :</strong><ul><li>Développement orienté objet en JavaScript natif.</li><li>Création d'une architecture Front-End dynamique.</li><li>Travail en équipe sur 3 semaines avec gestion de branches Git.</li></ul>",
+            "proj_steveio_tech": "<span class='skill-badge'>JavaScript Natif</span> <span class='skill-badge'>HTML/CSS</span> <span class='skill-badge'>Git</span>",
+
+            "proj_space_clicker_title": "Space Clicker",
+            "proj_space_clicker_desc": "Jeu incrémental en Java exécuté dans la console.",
+            "proj_space_clicker_long": "<strong>Période :</strong> Mars 2025<br><strong>Rôle :</strong> Développeur Back-End<br><strong>Méthodologie :</strong> Agile Scrum<br><br>Conception et développement d'un clicker (jeu incrémental) en Java, doté d'une interface textuelle s'exécutant dans la console, réalisé lors d'un défi intensif de 3 jours.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement Java (Programmation Orientée Objet).</li><li>Application rigoureuse de la méthodologie Scrum (Daily, Sprints de 2h, Review, Planning).</li><li>Travail d'équipe avec administration de dépôts Git.</li></ul>",
+            "proj_space_clicker_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>Agile Scrum</span> <span class='skill-badge'>Git</span>",
+
+            "proj_itineraires_title": "Itinéraires",
+            "proj_itineraires_desc": "Calcul d'itinéraires multi-critères (prix, temps, CO2) en JavaFX.",
+            "proj_itineraires_long": "La SAE 2.01/2.02 a pour objectif de calculer les plus courts trajets entre villes, en considérant le prix, le temps et le taux de CO2.<br><br><strong>Compétences :</strong><ul><li>Figma pour la maquette.</li><li>IHM avec JavaFX.</li><li>Algorithmes en Java (Graphes).</li></ul>",
+            "proj_itineraires_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>JavaFX</span>",
+            
+            "proj_space_title": "Space Of Questions",
+            "proj_space_desc": "Jeu éducatif Java pour primaires avec gestion de données.",
+            "proj_space_long": "Jeu de questions ludo-pédagogique. 4 modes de jeu.<br><br><strong>Compétences :</strong><ul><li>Stockage et manipulation (CSV).</li><li>Débogage autonome.</li></ul>",
+            "proj_space_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>CSV</span>",
+            
+            "proj_carpool_title": "Covoiturage",
+            "proj_carpool_desc": "Service web complet HTML/CSS pour gestion de flotte en entreprise.",
+            "proj_carpool_long": "Service de covoiturage à destination des employés.<br><br><strong>Compétences :</strong><ul><li>Maîtrise HTML & CSS.</li><li>Interface responsive.</li></ul>",
+            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>"
+        },
+        en: {
+            "nav_profil": "// Profile",
+            "nav_skills": "// Skills",
+            "nav_experience": "// Experience",
+            "nav_perso": "// Personal",
+            "nav_projets": "// School",
+            "nav_contact": "// Contact",
+            "hero_title": "Hi, I'm Léo.",
+            "hero_subtitle": "Full-Stack Developer",
+            "hero_desc": "3rd-year IT student in Villeneuve d'Ascq. Creator of digital experiences, currently Full-Stack Developer as a work-study student at Nextoo.",
+            "hero_btn_projects": "My Journey",
+            "hero_btn_cv": "My Resume",
+            "section_about": "About me",
+            "about_text": "Passionate about creative coding, I love transforming complex ideas into smooth and intuitive interfaces. Naturally curious, I constantly explore new technologies to expand my Full-Stack skillset.",
+            "skill_curiosity": "Curiosity",
+            "skill_passion": "Passion",
+            "skill_autonomy": "Autonomy",
+            "skill_patience": "Patience",
+            "section_stack": "Global Tech Stack",
+            "section_experience": "Professional Journey",
+            "section_perso": "Personal Projects",
+            "section_projects": "School Projects",
+            "section_contact": "Contact",
+            
+            "company_nextoo_desc": "Digital Services Company (ESN) specialized in tailor-made digital transformation and support.",
+            "title_my_journey": "My journey with them",
+            "company_nextoo_journey": "I started my adventure at Nextoo in March 2025 through an intensive internship within the 'Nextoo Academy'. Following this highly formative period, I continued as a work-study student from September 2026. I first joined the Nextoo Trainer Portal (PNF) project, before simultaneously working on the Inventory Management (GDS) project in November 2026. This progression allowed me to gain strong autonomy and solidify my Full-Stack and DevOps expertise.",
+
+            "proj_nextoo_academy_title": "Internship - Nextoo Academy",
+            "proj_nextoo_academy_desc": "Technical immersion and intensive internal training.",
+            "proj_nextoo_academy_long": "<strong>Period:</strong> From March 2025 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>As part of my internship at Nextoo, I joined the Nextoo Academy. This internal training program allowed me to considerably enrich my skills in Full-Stack development and broaden my technical background in DevOps practices.<br><br><strong>Missions & Achievements:</strong><ul><li>JAVA-EE Development (JPA/Hibernate, Spring Boot, REST APIs).</li><li>Vue.js Development (promises, i18n).</li><li>Docker Containerization and GitLab-CI pipelines.</li><li>Automated Unit Testing (JUnit, Mockito).</li><li>Scrum By Nextoo training.</li></ul>",
+            "proj_nextoo_academy_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>GitLab-CI</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Agile</span>",
+
+            "proj_nextoo_pnf_title": "Work-Study - PNF Project",
+            "proj_nextoo_pnf_desc": "Development of the 'Nextoo Trainer Portal'.",
+            "proj_nextoo_pnf_long": "<strong>Period:</strong> From September 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>During my work-study at Nextoo, I joined the PNF project allowing Nextoo Academy tutors to track their trainees' progress.<br><br><strong>Missions & Achievements:</strong><ul><li>Advanced Full-Stack Development (Java/Spring, JS/Vue.js).</li><li>Continuous Deployment and GitOps (ArgoCD, GitLab-CI).</li><li>Database schema automation with Liquibase.</li></ul>",
+            "proj_nextoo_pnf_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>ArgoCD</span> <span class='skill-badge'>Liquibase</span>",
+
+            "proj_nextoo_gds_title": "Work-Study - GDS Project",
+            "proj_nextoo_gds_desc": "Development of the 'Inventory Management' project.",
+            "proj_nextoo_gds_long": "<strong>Period:</strong> From November 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>In parallel with the PNF project, I rejoined the GDS project, aimed at inventorying the company's equipment and vehicles.<br><br><strong>Missions & Achievements:</strong><ul><li>Java-EE Development (JPA/Hibernate, Spring REST).</li><li>Complex Vue.js Front-End Development.</li><li>Integration of advanced CI/CD pipelines (ArgoCD, Trivy).</li></ul>",
+            "proj_nextoo_gds_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+
+            "proj_scarlea_title": "Scarlea",
+            "proj_scarlea_desc": "React-Native menstrual cycle tracking mobile application.",
+            "proj_scarlea_long": "<strong>Period:</strong> March 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><br>Creation of a 100% free mobile application centralizing menstrual cycle tracking and wellness tips. A personal project designed from scratch.<br><br><strong>Missions & Achievements:</strong><ul><li>Back-End Development (Java, Spring Boot, API REST).</li><li>Mobile Front-End Development in React-Native (Expo-Router).</li><li>Docker infrastructure and DB versioning with Liquibase.</li></ul>",
+            "proj_scarlea_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React-Native</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span>",
+
+            "proj_startup_title": "Startup Week - TransmissionPro",
+            "proj_startup_desc": "Medical application with voice transcription (React.js / Spring).",
+            "proj_startup_long": "<strong>Period:</strong> March 9 to 13, 2026<br><strong>Role:</strong> Full-Stack Developer<br><br>During a 5-day hackathon, I worked on 'TransmissionPro', an app allowing healthcare workers to write medical reports via voice transcription (OpenAI API).<br><br><strong>Missions & Achievements:</strong><ul><li>App security via Spring Security (CORS, filters).</li><li>Front-End development with React.js (SPA).</li><li>PostgreSQL deployment under Docker and Liquibase versioning.</li></ul>",
+            "proj_startup_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+
+            "proj_lillochat_title": "LilloChat",
+            "proj_lillochat_desc": "JEE social network without JavaScript (Apache Tomcat).",
+            "proj_lillochat_long": "<strong>Period:</strong> Feb-March 2025<br><strong>Role:</strong> JEE Developer<br><br>Developed a chat platform in a JEE environment, backed by an Apache Tomcat server and PostgreSQL. Major constraint: no JavaScript allowed.<br><br><strong>Missions & Achievements:</strong><ul><li>Java Enterprise Edition Development (OOP).</li><li>HTML/CSS integration.</li><li>Socket programming under Apache Tomcat.</li></ul>",
+            "proj_lillochat_tech": "<span class='skill-badge'>Java EE</span> <span class='skill-badge'>Tomcat</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>HTML/CSS</span>",
+
+            "proj_steveio_title": "Steve.io",
+            "proj_steveio_desc": "Vanilla JavaScript SPA web game (Agar.io clone).",
+            "proj_steveio_long": "<strong>Period:</strong> March 2025<br><strong>Role:</strong> JavaScript Developer<br><br>Web game recreating Agar.io mechanics in a Minecraft universe. Technical constraint: Single Page Application (SPA) using exclusively native JavaScript (no frameworks).<br><br><strong>Missions & Achievements:</strong><ul><li>Object-Oriented Programming in native JS.</li><li>Dynamic Front-End architecture.</li></ul>",
+            "proj_steveio_tech": "<span class='skill-badge'>Vanilla JS</span> <span class='skill-badge'>HTML/CSS</span> <span class='skill-badge'>Git</span>",
+
+            "proj_space_clicker_title": "Space Clicker",
+            "proj_space_clicker_desc": "Java incremental game executed in the console.",
+            "proj_space_clicker_long": "<strong>Period:</strong> March 2025<br><strong>Role:</strong> Back-End Developer<br><strong>Methodology:</strong> Agile Scrum<br><br>Design and development of an incremental game in Java with a console-based text interface, built during a 3-day intensive challenge.<br><br><strong>Missions & Achievements:</strong><ul><li>Java Development (OOP).</li><li>Strict application of Scrum methodology (2h Sprints, Dailies).</li></ul>",
+            "proj_space_clicker_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>Agile Scrum</span> <span class='skill-badge'>Git</span>",
+
+            "proj_itineraires_title": "Itineraries",
+            "proj_itineraires_desc": "Multi-criteria routing calculation (price, time, CO2) in JavaFX.",
+            "proj_itineraires_long": "Calculates shortest paths between cities. <strong>Skills:</strong> Figma, JavaFX, Algorithms.",
+            "proj_itineraires_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>JavaFX</span>",
+            
+            "proj_space_title": "Space Of Questions",
+            "proj_space_desc": "Educational Java game for primary schools with data management.",
+            "proj_space_long": "Quiz game. <strong>Skills:</strong> Advanced Java, CSV.",
+            "proj_space_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>CSV</span>",
+            
+            "proj_carpool_title": "Carpooling",
+            "proj_carpool_desc": "Full HTML/CSS web service for corporate fleet management.",
+            "proj_carpool_long": "Carpooling service. <strong>Skills:</strong> HTML5 & CSS3.",
+            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>"
+        }
+    };
+
+    let currentLang = 'fr';
+    const langToggleBtn = document.getElementById('langToggle');
+
+    function updateLanguage(lang) {
+        currentLang = lang;
+        langToggleBtn.innerText = lang === 'fr' ? 'EN' : 'FR';
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.innerHTML = translations[lang][key]; 
+            }
+        });
+
+        playHeroAnimation();
     }
-};
 
-function activateProject(projectKey) {
-    for (let key in buttons) {
-        const button = buttons[key].element;
-        if (key === projectKey) {
-            button.style.backgroundColor = "#576C54";
-            button.style.borderColor = "#CFFFB8";
-            button.style.boxShadow = "0px 6px 5px rgb(37, 37, 37)";
-            projectImage.src = buttons[key].bgImage;
-            projectTitle.innerText = buttons[key].title;
-            projectDescription.innerText = buttons[key].description;
-            pageWeb = buttons[key].pageWeb;
-        } else {
-            button.style.backgroundColor = "transparent";
-            button.style.borderColor = "#F6F6F6";
-            button.style.boxShadow = "none";
+    langToggleBtn.addEventListener('click', () => {
+        const newLang = currentLang === 'fr' ? 'en' : 'fr';
+        updateLanguage(newLang);
+    });
+
+    // ==========================================
+    // 2. ANIMATION HERO (Anime.js)
+    // ==========================================
+    function playHeroAnimation() {
+        const textWrapper = document.querySelector('.ml11 .letters');
+        if(textWrapper) {
+            textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+            anime.remove('.ml11 .line, .ml11 .letter');
+            
+            anime.timeline({loop: false})
+              .add({ targets: '.ml11 .line', scaleY: [0,1], opacity: [0.5,1], easing: "easeOutExpo", duration: 700 })
+              .add({ targets: '.ml11 .line', translateX: [0, textWrapper.getBoundingClientRect().width + 10], easing: "easeOutExpo", duration: 700, delay: 100 })
+              .add({ targets: '.ml11 .letter', opacity: [0,1], easing: "easeOutExpo", duration: 600, offset: '-=775', delay: (el, i) => 34 * (i+1) })
+              .add({ targets: '.ml11 .line', opacity: 0, duration: 800, easing: "easeOutExpo", delay: 200 });
         }
     }
-}
+    
+    playHeroAnimation();
 
-function openGitProject() {
-    window.location = pageWeb;
-}
+    // ==========================================
+    // 3. PARTICLES.JS
+    // ==========================================
+    if(document.getElementById('particles-js') && typeof particlesJS !== "undefined"){
+        particlesJS('particles-js', {
+          "particles": {
+            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#818cf8" },
+            "shape": { "type": "circle" },
+            "opacity": { "value": 0.2, "random": false },
+            "size": { "value": 3, "random": true },
+            "line_linked": { "enable": true, "distance": 150, "color": "#818cf8", "opacity": 0.1, "width": 1 },
+            "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": { "enable": true, "mode": "grab" },
+              "onclick": { "enable": true, "mode": "push" },
+              "resize": true
+            },
+            "modes": {
+              "grab": { "distance": 140, "line_linked": { "opacity": 0.4 } },
+              "push": { "particles_nb": 4 }
+            }
+          },
+          "retina_detect": true
+        });
+    }
 
-function openMail() {
-    window.location = "mailto:leof150105@gmail.com";
-}
+    // ==========================================
+    // 4. SCROLL REVEAL & TILT & MAGNETIC
+    // ==========================================
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
 
-function openGitlab() {
-    window.location = "https://gitlab.com/leo9440022";
-}
+    document.querySelectorAll('.reveal').forEach(reveal => revealOnScroll.observe(reveal));
 
-function openLinkedin() {
-    window.location = "https://www.linkedin.com/in/l%C3%A9o-fantuz-chrobot-9157b229b/";
-}
+    if(typeof VanillaTilt !== 'undefined'){
+        VanillaTilt.init(document.querySelectorAll(".js-tilt"), { max: 10, speed: 400, glare: true, "max-glare": 0.2, scale: 1.02 });
+    }
 
-// Assign event listeners to each button
-for (let key in buttons) {
-    buttons[key].element.addEventListener("click", () => activateProject(key));
-}
+    document.querySelectorAll('.btn-magnetic, .magnetic-icon').forEach(elem => {
+        elem.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const moveX = (x - rect.width / 2) * 0.2; 
+            const moveY = (y - rect.height / 2) * 0.2;
+            
+            this.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+        
+        elem.addEventListener('mouseleave', function() {
+            this.style.transform = 'translate(0px, 0px)';
+        });
+    });
+
+    // ==========================================
+    // 5. BOUTON RETOUR EN HAUT
+    // ==========================================
+    const backToTopBtn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) backToTopBtn.classList.add("show");
+        else backToTopBtn.classList.remove("show");
+    });
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // ==========================================
+    // 6. GESTION DE LA MODALE ET DE L'IMAGE
+    // ==========================================
+    const modal = document.getElementById("projectModal");
+    const closeModalBtn = document.querySelector(".close-modal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDesc = document.getElementById("modalDesc");
+    const modalTech = document.getElementById("modalTech");
+    const modalImage = document.getElementById("modalImage"); // NOUVEAU
+    const projectCards = document.querySelectorAll(".project-card");
+
+    projectCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const projectKey = card.getAttribute("data-project"); 
+            
+            // 1. Gestion des textes (Titre et Description)
+            modalTitle.setAttribute("data-i18n", `proj_${projectKey}_title`);
+            modalDesc.setAttribute("data-i18n", `proj_${projectKey}_long`);
+            modalTitle.innerHTML = translations[currentLang][`proj_${projectKey}_title`];
+            modalDesc.innerHTML = translations[currentLang][`proj_${projectKey}_long`];
+
+            // 2. Gestion des badges techniques
+            const techKey = `proj_${projectKey}_tech`;
+            if (translations[currentLang][techKey]) {
+                modalTech.innerHTML = translations[currentLang][techKey];
+                modalTech.style.display = "flex"; 
+            } else {
+                modalTech.style.display = "none";
+            }
+
+            // 3. NOUVEAU : Récupération et affichage de l'image du projet
+            const cardImg = card.querySelector(".project-image img");
+            if(cardImg && cardImg.src) {
+                modalImage.src = cardImg.src;
+                modalImage.alt = cardImg.alt || "Image du projet";
+                modalImage.style.display = "block"; // Affiche l'image
+            } else {
+                modalImage.style.display = "none"; // Cache s'il n'y a pas d'image
+            }
+
+            // 4. Affichage de la modale
+            modal.classList.add("show");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    const closeModal = () => {
+        modal.classList.remove("show");
+        document.body.style.overflow = "auto";
+    };
+
+    closeModalBtn.addEventListener("click", closeModal);
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
