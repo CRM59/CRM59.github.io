@@ -37,58 +37,69 @@ document.addEventListener("DOMContentLoaded", () => {
             "proj_nextoo_academy_desc": "Immersion technique et formation interne intensive (Mars 2025 - Aujourd'hui).",
             "proj_nextoo_academy_long": "<strong>Période :</strong> De Mars 2025 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Dans le cadre de mon stage, j’ai intégré la Nextoo Academy. Ce programme m’a permis d’enrichir considérablement mes compétences Full-Stack et d'élargir mon bagage technique aux pratiques DevOps et à la conformité RGPD.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement en Java-EE (JPA/Hibernate, Spring Boot, API REST, POO avancée).</li><li>Développement Front-End en Vue.js (Promesses, i18n).</li><li>Mise en place de tests automatisés (JUnit, Mockito) et application des règles de Clean Code via SonarQube.</li><li>Initiation DevOps : Conteneurisation Docker, pipelines GitLab-CI, déploiement PostgreSQL.</li><li>Suivi de formation Scrum By Nextoo (Rituels, rôles, manifeste).</li></ul>",
             "proj_nextoo_academy_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>GitLab-CI</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Agile Scrum</span>",
+            "proj_nextoo_academy_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-magnifying-glass'></i> Curiosité</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-ear-listen'></i> Écoute active</span>",
 
             "proj_nextoo_pnf_title": "Alternance - Projet PNF",
             "proj_nextoo_pnf_desc": "Développement du \"Portail Nextoo Formateur\" (Septembre 2026 - Aujourd'hui).",
             "proj_nextoo_pnf_long": "<strong>Période :</strong> Septembre 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Durant mon alternance, j’ai intégré le projet PNF permettant aux tuteurs de la Nextoo Academy de suivre l'avancée de leurs stagiaires (assignation de formations, commentaires, suivi de compétences).<br><br><strong>Missions et réalisations :</strong><ul><li>Développement Full-Stack (Java/Spring Boot, Vue.js, PostgreSQL).</li><li>Découverte de l'écosystème DevOps avancé (Trivy, ArgoCD, Liquibase pour l'automatisation des BDD).</li><li>Participation active à l'ensemble des cérémonies Scrum et documentation via Jira/Confluence/Swagger.</li></ul>",
             "proj_nextoo_pnf_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>ArgoCD / Trivy</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>Swagger</span>",
+            "proj_nextoo_pnf_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-sitemap'></i> Organisation d'un projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-hourglass-half'></i> Patience</span> <span class='soft-skill-badge'><i class='fa-solid fa-comments'></i> Communication</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span>",
 
             "proj_nextoo_gds_title": "Alternance - Projet GDS",
             "proj_nextoo_gds_desc": "Développement du projet \"Gestion des Stocks\" (Novembre 2026 - Aujourd'hui).",
             "proj_nextoo_gds_long": "<strong>Période :</strong> Novembre 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>En parallèle du projet PNF, j’ai réintégré le projet GDS, visant à recenser le matériel et les véhicules de l’entreprise, tout en assurant le suivi de leurs attributions et de leur maintenance.<br><br><strong>Missions et réalisations :</strong><ul><li>Consolidation d'expertise sur la stack Java/Spring et Vue.js avec une forte exigence sur la qualité du code.</li><li>Intervention poussée sur la chaîne d'intégration et de déploiement continu (CI/CD).</li><li>Gestion des environnements locaux et distants, utilisation de Postman/Bruno pour l'architecture d'API.</li></ul>",
             "proj_nextoo_gds_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker / CI-CD</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>Bruno</span>",
+            "proj_nextoo_gds_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-sitemap'></i> Organisation d'un projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-hourglass-half'></i> Patience</span> <span class='soft-skill-badge'><i class='fa-solid fa-comments'></i> Communication</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span>",
 
             // --- PROJETS PERSONNELS ---
             "proj_scarlea_title": "Scarlea",
             "proj_scarlea_desc": "Application mobile React-Native de suivi du cycle menstruel.",
             "proj_scarlea_long": "<strong>Période :</strong> De Mars 2026 à Aujourd’hui<br><strong>Rôle :</strong> Développeur Full-Stack<br><br>En parallèle de mon alternance, je réalise \"Scarlea\", une application mobile centralisant le suivi des cycles menstruels et des conseils (santé, beauté). 100% gratuite, elle m'a permis de gérer un projet de A à Z en autonomie complète.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement back-end en Java (Spring Boot, Spring MVC, JPA/Hibernate, API REST).</li><li>Développement d'interfaces mobiles en JavaScript avec React-Native (Expo-Router).</li><li>Mise en place de l'infrastructure Docker (Windows/Linux) et versioning de la base PostgreSQL avec Liquibase.</li><li>Conception stratégique, choix d'architecture et gestion de projet via Jira et GitHub.</li></ul>",
             "proj_scarlea_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React-Native (Expo)</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+            "proj_scarlea_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-lightbulb'></i> Recherche d'idées</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span>",
 
             // --- PROJETS SCOLAIRES ---
             "proj_startup_title": "Startup Week - TransmissionPro",
             "proj_startup_desc": "Application médicale avec transcription vocale (React.js / Spring).",
             "proj_startup_long": "<strong>Période :</strong> Du 9 au 13 Mars 2026<br><strong>Rôle :</strong> Développeur Full-Stack<br><strong>Méthodologie :</strong> Agile (Scrum)<br><br>Lors de ma 3ème année de BUT, au sein d’une équipe de 5, j’ai travaillé sur “TransmissionPro”, une application permettant aux soignants de réaliser leurs transmissions médicales via transcription vocale (API OpenAI).<br><br><strong>Missions et réalisations :</strong><ul><li>Sécurisation de l'application via Spring Security (filtres de requêtes, CORS).</li><li>Développement Front-End avec React.js et React-Router (SPA).</li><li>Déploiement PostgreSQL sous Docker et versioning avec Liquibase.</li><li>Pilotage de projet et API via GitLab Issues et Bruno.</li></ul>",
             "proj_startup_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span> <span class='skill-badge'>OpenAI API</span>",
+            "proj_startup_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
 
             "proj_lillochat_title": "LilloChat",
             "proj_lillochat_desc": "Réseau social JEE sans JavaScript (Apache Tomcat, PostgreSQL).",
             "proj_lillochat_long": "<strong>Période :</strong> Février-Mars 2025<br><strong>Rôle :</strong> Développeur JEE<br><br>Lors de ma 2ème année de BUT, j'ai conçu en binôme une plateforme de discussion en environnement JEE, adossée à un serveur Apache Tomcat et une BDD PostgreSQL. Contrainte majeure : concevoir l'intégralité de l'application sans utiliser le moindre script JavaScript.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement en Java Enterprise Edition (POO).</li><li>Intégration HTML/CSS et gestion de version avec Git.</li><li>Utilisation des Sockets sous Apache Tomcat.</li></ul>",
             "proj_lillochat_tech": "<span class='skill-badge'>Java EE</span> <span class='skill-badge'>Apache Tomcat</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>HTML/CSS</span>",
+            "proj_lillochat_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
 
             "proj_steveio_title": "Steve.io",
             "proj_steveio_desc": "Jeu web SPA en JavaScript natif (Clone d'Agar.io).",
             "proj_steveio_long": "<strong>Période :</strong> Mars 2025<br><strong>Rôle :</strong> Développeur JavaScript<br><br>Jeu web reprenant les mécaniques du célèbre Agar.io, revisité dans l'univers de Minecraft. Contrainte technique : conception sous forme de Single Page Application (SPA) en utilisant exclusivement du JavaScript natif (sans framework).<br><br><strong>Missions et réalisations :</strong><ul><li>Développement orienté objet en JavaScript natif.</li><li>Création d'une architecture Front-End dynamique.</li><li>Travail en équipe sur 3 semaines avec gestion de branches Git.</li></ul>",
             "proj_steveio_tech": "<span class='skill-badge'>JavaScript Natif</span> <span class='skill-badge'>HTML/CSS</span> <span class='skill-badge'>Git</span>",
+            "proj_steveio_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
 
             "proj_space_clicker_title": "Space Clicker",
             "proj_space_clicker_desc": "Jeu incrémental en Java exécuté dans la console.",
             "proj_space_clicker_long": "<strong>Période :</strong> Mars 2025<br><strong>Rôle :</strong> Développeur Back-End<br><strong>Méthodologie :</strong> Agile Scrum<br><br>Conception et développement d'un clicker (jeu incrémental) en Java, doté d'une interface textuelle s'exécutant dans la console, réalisé lors d'un défi intensif de 3 jours.<br><br><strong>Missions et réalisations :</strong><ul><li>Développement Java (Programmation Orientée Objet).</li><li>Application rigoureuse de la méthodologie Scrum (Daily, Sprints de 2h, Review, Planning).</li><li>Travail d'équipe avec administration de dépôts Git.</li></ul>",
             "proj_space_clicker_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>Agile Scrum</span> <span class='skill-badge'>Git</span>",
+            "proj_space_clicker_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
 
             "proj_itineraires_title": "Itinéraires",
             "proj_itineraires_desc": "Calcul d'itinéraires multi-critères (prix, temps, CO2) en JavaFX.",
             "proj_itineraires_long": "La SAE 2.01/2.02 a pour objectif de calculer les plus courts trajets entre villes, en considérant le prix, le temps et le taux de CO2.<br><br><strong>Compétences :</strong><ul><li>Figma pour la maquette.</li><li>IHM avec JavaFX.</li><li>Algorithmes en Java (Graphes).</li></ul>",
             "proj_itineraires_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>JavaFX</span>",
+            "proj_itineraires_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-brain'></i> Réflexion</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
             
             "proj_space_title": "Space Of Questions",
             "proj_space_desc": "Jeu éducatif Java pour primaires avec gestion de données.",
             "proj_space_long": "Jeu de questions ludo-pédagogique. 4 modes de jeu.<br><br><strong>Compétences :</strong><ul><li>Stockage et manipulation (CSV).</li><li>Débogage autonome.</li></ul>",
             "proj_space_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>CSV</span>",
+            "proj_space_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Résolution de problème</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Gestion du temps</span>",
             
             "proj_carpool_title": "Covoiturage",
             "proj_carpool_desc": "Service web complet HTML/CSS pour gestion de flotte en entreprise.",
             "proj_carpool_long": "Service de covoiturage à destination des employés.<br><br><strong>Compétences :</strong><ul><li>Maîtrise HTML & CSS.</li><li>Interface responsive.</li></ul>",
-            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>"
+            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>",
+            "proj_carpool_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Orchestration de projet</span> <span class='soft-skill-badge'><i class='fa-solid fa-brain'></i> Réflexion</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Travail en équipe</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Créativité</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomie</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organisation</span>"
         },
         en: {
             "nav_profil": "// Profile",
@@ -122,56 +133,67 @@ document.addEventListener("DOMContentLoaded", () => {
             "proj_nextoo_academy_desc": "Technical immersion and intensive internal training.",
             "proj_nextoo_academy_long": "<strong>Period:</strong> From March 2025 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>As part of my internship at Nextoo, I joined the Nextoo Academy. This internal training program allowed me to considerably enrich my skills in Full-Stack development and broaden my technical background in DevOps practices.<br><br><strong>Missions & Achievements:</strong><ul><li>JAVA-EE Development (JPA/Hibernate, Spring Boot, REST APIs).</li><li>Vue.js Development (promises, i18n).</li><li>Docker Containerization and GitLab-CI pipelines.</li><li>Automated Unit Testing (JUnit, Mockito).</li><li>Scrum By Nextoo training.</li></ul>",
             "proj_nextoo_academy_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>GitLab-CI</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Agile</span>",
+            "proj_nextoo_academy_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-magnifying-glass'></i> Curiosity</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-ear-listen'></i> Active Listening</span>",
 
             "proj_nextoo_pnf_title": "Work-Study - PNF Project",
             "proj_nextoo_pnf_desc": "Development of the 'Nextoo Trainer Portal'.",
             "proj_nextoo_pnf_long": "<strong>Period:</strong> From September 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>During my work-study at Nextoo, I joined the PNF project allowing Nextoo Academy tutors to track their trainees' progress.<br><br><strong>Missions & Achievements:</strong><ul><li>Advanced Full-Stack Development (Java/Spring, JS/Vue.js).</li><li>Continuous Deployment and GitOps (ArgoCD, GitLab-CI).</li><li>Database schema automation with Liquibase.</li></ul>",
             "proj_nextoo_pnf_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>ArgoCD</span> <span class='skill-badge'>Liquibase</span>",
+            "proj_nextoo_pnf_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-sitemap'></i> Project Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-hourglass-half'></i> Patience</span> <span class='soft-skill-badge'><i class='fa-solid fa-comments'></i> Communication</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span>",
 
             "proj_nextoo_gds_title": "Work-Study - GDS Project",
             "proj_nextoo_gds_desc": "Development of the 'Inventory Management' project.",
             "proj_nextoo_gds_long": "<strong>Period:</strong> From November 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><strong>Methodology:</strong> Agile (Scrum)<br><br>In parallel with the PNF project, I rejoined the GDS project, aimed at inventorying the company's equipment and vehicles.<br><br><strong>Missions & Achievements:</strong><ul><li>Java-EE Development (JPA/Hibernate, Spring REST).</li><li>Complex Vue.js Front-End Development.</li><li>Integration of advanced CI/CD pipelines (ArgoCD, Trivy).</li></ul>",
             "proj_nextoo_gds_tech": "<span class='skill-badge'>Java / Spring Boot</span> <span class='skill-badge'>Vue.js</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+            "proj_nextoo_gds_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-sitemap'></i> Project Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-hourglass-half'></i> Patience</span> <span class='soft-skill-badge'><i class='fa-solid fa-comments'></i> Communication</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span>",
 
             "proj_scarlea_title": "Scarlea",
             "proj_scarlea_desc": "React-Native menstrual cycle tracking mobile application.",
             "proj_scarlea_long": "<strong>Period:</strong> March 2026 to Present<br><strong>Role:</strong> Full-Stack Developer<br><br>Creation of a 100% free mobile application centralizing menstrual cycle tracking and wellness tips. A personal project designed from scratch.<br><br><strong>Missions & Achievements:</strong><ul><li>Back-End Development (Java, Spring Boot, API REST).</li><li>Mobile Front-End Development in React-Native (Expo-Router).</li><li>Docker infrastructure and DB versioning with Liquibase.</li></ul>",
             "proj_scarlea_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React-Native</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>Docker</span>",
+            "proj_scarlea_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-lightbulb'></i> Ideation</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span>",
 
             "proj_startup_title": "Startup Week - TransmissionPro",
             "proj_startup_desc": "Medical application with voice transcription (React.js / Spring).",
             "proj_startup_long": "<strong>Period:</strong> March 9 to 13, 2026<br><strong>Role:</strong> Full-Stack Developer<br><br>During a 5-day hackathon, I worked on 'TransmissionPro', an app allowing healthcare workers to write medical reports via voice transcription (OpenAI API).<br><br><strong>Missions & Achievements:</strong><ul><li>App security via Spring Security (CORS, filters).</li><li>Front-End development with React.js (SPA).</li><li>PostgreSQL deployment under Docker and Liquibase versioning.</li></ul>",
             "proj_startup_tech": "<span class='skill-badge'>Spring Boot</span> <span class='skill-badge'>React.js</span> <span class='skill-badge'>Docker</span> <span class='skill-badge'>Liquibase</span>",
+            "proj_startup_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
 
             "proj_lillochat_title": "LilloChat",
             "proj_lillochat_desc": "JEE social network without JavaScript (Apache Tomcat).",
             "proj_lillochat_long": "<strong>Period:</strong> Feb-March 2025<br><strong>Role:</strong> JEE Developer<br><br>Developed a chat platform in a JEE environment, backed by an Apache Tomcat server and PostgreSQL. Major constraint: no JavaScript allowed.<br><br><strong>Missions & Achievements:</strong><ul><li>Java Enterprise Edition Development (OOP).</li><li>HTML/CSS integration.</li><li>Socket programming under Apache Tomcat.</li></ul>",
             "proj_lillochat_tech": "<span class='skill-badge'>Java EE</span> <span class='skill-badge'>Tomcat</span> <span class='skill-badge'>PostgreSQL</span> <span class='skill-badge'>HTML/CSS</span>",
+            "proj_lillochat_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
 
             "proj_steveio_title": "Steve.io",
             "proj_steveio_desc": "Vanilla JavaScript SPA web game (Agar.io clone).",
             "proj_steveio_long": "<strong>Period:</strong> March 2025<br><strong>Role:</strong> JavaScript Developer<br><br>Web game recreating Agar.io mechanics in a Minecraft universe. Technical constraint: Single Page Application (SPA) using exclusively native JavaScript (no frameworks).<br><br><strong>Missions & Achievements:</strong><ul><li>Object-Oriented Programming in native JS.</li><li>Dynamic Front-End architecture.</li></ul>",
             "proj_steveio_tech": "<span class='skill-badge'>Vanilla JS</span> <span class='skill-badge'>HTML/CSS</span> <span class='skill-badge'>Git</span>",
+            "proj_steveio_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-book'></i> Documentation</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
 
             "proj_space_clicker_title": "Space Clicker",
             "proj_space_clicker_desc": "Java incremental game executed in the console.",
             "proj_space_clicker_long": "<strong>Period:</strong> March 2025<br><strong>Role:</strong> Back-End Developer<br><strong>Methodology:</strong> Agile Scrum<br><br>Design and development of an incremental game in Java with a console-based text interface, built during a 3-day intensive challenge.<br><br><strong>Missions & Achievements:</strong><ul><li>Java Development (OOP).</li><li>Strict application of Scrum methodology (2h Sprints, Dailies).</li></ul>",
             "proj_space_clicker_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>Agile Scrum</span> <span class='skill-badge'>Git</span>",
+            "proj_space_clicker_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
 
             "proj_itineraires_title": "Itineraries",
             "proj_itineraires_desc": "Multi-criteria routing calculation (price, time, CO2) in JavaFX.",
             "proj_itineraires_long": "Calculates shortest paths between cities. <strong>Skills:</strong> Figma, JavaFX, Algorithms.",
             "proj_itineraires_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>JavaFX</span>",
+            "proj_itineraires_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-brain'></i> Analytical Thinking</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
             
             "proj_space_title": "Space Of Questions",
             "proj_space_desc": "Educational Java game for primary schools with data management.",
             "proj_space_long": "Quiz game. <strong>Skills:</strong> Advanced Java, CSV.",
             "proj_space_tech": "<span class='skill-badge'>Java</span> <span class='skill-badge'>CSV</span>",
+            "proj_space_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-puzzle-piece'></i> Problem Solving</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span> <span class='soft-skill-badge'><i class='fa-solid fa-clock'></i> Time Management</span>",
             
             "proj_carpool_title": "Carpooling",
             "proj_carpool_desc": "Full HTML/CSS web service for corporate fleet management.",
             "proj_carpool_long": "Carpooling service. <strong>Skills:</strong> HTML5 & CSS3.",
-            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>"
+            "proj_carpool_tech": "<span class='skill-badge'>HTML5</span> <span class='skill-badge'>CSS3</span>",
+            "proj_carpool_soft": "<span class='soft-skill-badge'><i class='fa-solid fa-network-wired'></i> Project Orchestration</span> <span class='soft-skill-badge'><i class='fa-solid fa-brain'></i> Analytical Thinking</span> <span class='soft-skill-badge'><i class='fa-solid fa-users'></i> Teamwork</span> <span class='soft-skill-badge'><i class='fa-solid fa-palette'></i> Creativity</span> <span class='soft-skill-badge'><i class='fa-solid fa-bolt'></i> Autonomy</span> <span class='soft-skill-badge'><i class='fa-solid fa-tasks'></i> Organization</span>"
         }
     };
 
@@ -300,7 +322,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitle = document.getElementById("modalTitle");
     const modalDesc = document.getElementById("modalDesc");
     const modalTech = document.getElementById("modalTech");
-    const modalImage = document.getElementById("modalImage"); // Balise img de la popup
+    const modalSoft = document.getElementById("modalSoft"); // NOUVEAU
+    const modalImage = document.getElementById("modalImage");
     const projectCards = document.querySelectorAll(".project-card");
 
     projectCards.forEach(card => {
@@ -313,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modalTitle.innerHTML = translations[currentLang][`proj_${projectKey}_title`];
             modalDesc.innerHTML = translations[currentLang][`proj_${projectKey}_long`];
 
-            // 2. Gestion des badges techniques
+            // 2. Gestion des badges techniques (Hard Skills)
             const techKey = `proj_${projectKey}_tech`;
             if (translations[currentLang][techKey]) {
                 modalTech.innerHTML = translations[currentLang][techKey];
@@ -322,14 +345,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 modalTech.style.display = "none";
             }
 
+            // 2.5 Gestion des badges Savoir-être (Soft Skills) - NOUVEAU
+            const softKey = `proj_${projectKey}_soft`;
+            if (translations[currentLang][softKey]) {
+                modalSoft.innerHTML = translations[currentLang][softKey];
+                modalSoft.style.display = "flex"; 
+            } else {
+                modalSoft.style.display = "none";
+            }
+
             // 3. Récupération et affichage de l'image du projet
             const cardImg = card.querySelector(".project-image img");
             if(cardImg && cardImg.src) {
                 modalImage.src = cardImg.src;
                 modalImage.alt = cardImg.alt || "Image du projet";
-                modalImage.style.display = "block"; // Affiche l'image
+                modalImage.style.display = "block"; 
             } else {
-                modalImage.style.display = "none"; // Cache s'il n'y a pas d'image
+                modalImage.style.display = "none"; 
             }
 
             // 4. Affichage de la modale

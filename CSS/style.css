@@ -578,7 +578,7 @@ section {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    display: none; /* Caché par défaut, affiché par JS */
+    display: none;
 }
 
 #modalTitle {
@@ -608,6 +608,7 @@ section {
 #modalDesc li strong { color: var(--text-main); }
 #modalDesc strong { color: var(--text-main); }
 
+/* Stack Technique (Hard Skills) */
 .modal-tech-stack {
     margin-top: 30px;
     padding-top: 25px;
@@ -621,6 +622,38 @@ section {
     background-color: rgba(3, 7, 18, 0.5);
     font-size: 0.8rem;
     padding: 8px 15px;
+}
+
+/* NOUVEAU : Stack Savoir-être (Soft Skills) */
+.modal-soft-stack {
+    margin-top: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modal-soft-stack .soft-skill-badge {
+    background-color: rgba(45, 212, 191, 0.1); 
+    color: var(--secondary-accent);
+    border: 1px solid rgba(45, 212, 191, 0.3);
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 20px; 
+    font-family: var(--font-mono);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-smooth);
+}
+
+.modal-soft-stack .soft-skill-badge i {
+    font-size: 0.9rem;
+}
+
+.modal-soft-stack .soft-skill-badge:hover {
+    background-color: var(--secondary-accent);
+    color: var(--bg-color);
 }
 
 /* Contact & Social Links */
